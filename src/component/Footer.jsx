@@ -1,3 +1,5 @@
+import { FooterLinks } from "../datas";
+
 export const Footer = () => {
   return (
     <footer className="footer">
@@ -8,7 +10,7 @@ export const Footer = () => {
               <span>Vide Infra</span>
             </div>
             <div className="links">
-              {links.map(({ item }, i) => (
+              {FooterLinks.map(({ item }, i) => (
                 <a key={i} href="/">
                   <span>{item}</span>
                 </a>
@@ -32,10 +34,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
-const links = [
-  { item: "Facebook" },
-  { item: "Instagram" },
-  { item: "Behance" },
-  { item: "Dribbble" },
-];

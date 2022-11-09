@@ -42,12 +42,12 @@ body {
     justify-content: center;
     background-color: $main;
     border-bottom: 1px solid $bc;
-    @include media ('<=phone'){
-        background-color: red;
-        &::before{
-            content: "hello";
-        }
-    }
+    // @include media ('<=phone'){
+    //     background-color: red;
+    //     &::before{
+    //         content: "hello";
+    //     }
+    // }
     .header-row { 
         max-width: 1200px;
         width: 100%;
