@@ -1,3 +1,4 @@
+import { NavigationLists } from "../datas";
 import icon from "../images/icon-upward.svg";
 
 export const Navigation = () => {
@@ -11,18 +12,16 @@ export const Navigation = () => {
           <div className="hover-above-text" data-text="Expertise">
             <span>Expertise</span>
           </div>
-          {/* <div className="hover-below-text">Expertise</div> */}
           <div className="hover-icon">
             <img src={icon} alt="" />
           </div>
         </div>
         <div className="list">
           <ul>
-            {lists.map(({ title }, i) => (
+            {NavigationLists.map(({ title }, i) => (
               <li key={i}>
                 <a href="/work" data-text={title}>
                   <span>{title}</span>
-                  {/* <div>{title}</div> */}
                 </a>
               </li>
             ))}
@@ -32,11 +31,3 @@ export const Navigation = () => {
     </div>
   );
 };
-
-const lists = [
-  { title: "Work" },
-  { title: "Company" },
-  { title: "Blog" },
-  { title: "Career" },
-  { title: "Contact" },
-];

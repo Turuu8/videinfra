@@ -1,3 +1,4 @@
+import { CompanyCartsItems } from "../../datas";
 import icon from "../../images/icon-upward.svg";
 
 export const Company = () => {
@@ -32,7 +33,7 @@ export const Company = () => {
         </button>
       </div>
       <div className="carts">
-        {cartsItems.map(({ logoUrl, name }, i) => (
+        {CompanyCartsItems.map(({ logoUrl, name }, i) => (
           <div key={i} className="cart">
             <img src={logoUrl} alt="" />
             <p>{name}</p>
@@ -47,34 +48,3 @@ export const Company = () => {
     </div>
   );
 };
-
-const cartsItems = [
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/ba.svg",
-    name: "British Airways",
-  },
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/bite.svg",
-    name: "Bite",
-  },
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/airbaltic.svg",
-    name: "airBaltic",
-  },
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/dnb.svg",
-    name: "DNB",
-  },
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/dnb.svg",
-    name: "GE Money Bank",
-  },
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/seb.svg",
-    name: "SEB",
-  },
-  {
-    logoUrl: "https://videinfra.com/assets/images/media/clients/ablv.svg",
-    name: "ABLV",
-  },
-];
