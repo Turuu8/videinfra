@@ -1,4 +1,4 @@
-@import "./component//\ responsive-breakpoints/breakpoints.scss";
+@import "./component/responsive-breakpoints/breakpoints.scss";
 
 $main: #cdcecf;
 $light: #fff;
@@ -42,12 +42,6 @@ body {
     justify-content: center;
     background-color: $main;
     border-bottom: 1px solid $bc;
-    // @include media ('<=phone'){
-    //     background-color: red;
-    //     &::before{
-    //         content: "hello";
-    //     }
-    // }
     .header-row { 
         max-width: 1200px;
         width: 100%;
@@ -57,21 +51,43 @@ body {
         align-items: center;
         justify-content: space-between;
         animation: header-animation-row 1s ease ;
+        @include media ('<=phone&tablet') {
+            padding:10px 30px;
+            font-size: 16px;
+        }
+        @include media ( '>phone&tablet' , '<=tablet'){
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 10px;
+            padding: 8.5px 30px;
+        }
         .logo { 
             padding-left: 20px;
-            @include logo
+            @include logo;
+            @include media ('<=phone&tablet') {
+                padding: 0;
+            }
+            @include media ( '>phone&tablet' , '<=tablet') {
+                padding-left: 18px;
+            }
         }
         .link-btn { 
             font-weight: 100;
             display: flex;
             align-items: center;
+            @include media ('<=phone&tablet') {
+                display: none;
+            }
+            @include media ( '>phone&tablet' , '<=tablet') {
+                margin-left: -12%;
+            }
             .hover-icon{
                 box-sizing: border-box;
-                margin-left: 10px;
+                margin-left: 8px;
                 border-radius: 50%;
                 background-color: $iconBackColor;
-                width: 20px;
-                height: 20px;
+                width: 12px;
+                height: 12px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -123,11 +139,24 @@ body {
             width: 660px;
             display: flex;
             justify-content: flex-end;
+            @include media ('<=phone') {
+                display: none;
+            }
+            @include media ('<=phone&tablet') {
+                display: none;
+            }
+            @include media ('<=tablet') {
+                margin: 0 10px;
+                width: 50%;
+            }
             ul {
                 display: flex;
                 list-style: none;
                 li{ 
-                    margin:  0 17px;
+                     margin:  0 17px;
+                    @include media ('<=tablet') {
+                        margin:  0 9.5px;
+                    }
                     a{
                         text-decoration: none;
                         color: black;
@@ -157,7 +186,14 @@ body {
                 }
             }
         }
-    }
+        .menu {
+            display: none;
+            align-items: center;
+            @include media ('<=phone&tablet') {
+                display: flex;
+            }
+        }
+    }   
     @keyframes header-animation-row {
         0%{ 
             transform: translate3d(0, -100%, 0);
@@ -173,14 +209,15 @@ body {
         width: 100%;
         height: 100vh;
         @include maxWidth;
-        .background{
-            height: 100%;
-            width: 100%;
-            transition: all .2s  ;
-            background-color: $main;
-        }
+        // .background{
+        //     height: 100%;
+        //     width: 100%;
+        //     transition: all .2s  ;
+        //     background-color: $main;
+        // }
         .intro{
             position: absolute;
+            background-color: $main;
             box-sizing: border-box;
             width: 100%;
             top: 0;
@@ -191,13 +228,27 @@ body {
             justify-content: space-between;
             overflow: hidden;
             z-index: 5;
-            transition: all .19s  ;
+            transition: all .19s;
+            @include media ('<=phone&tablet'){
+                padding: 84px 30px 40px;
+            }
+            @include media ('>phone&tablet' , '<=tablet'){
+                padding: 6.5% 6% 30px;
+            }
             .headline-word{
                 font-size: 60px;
                 font-weight: 100;
                 letter-spacing: -0.09em;
                 line-height: 100px;
                 margin: -2% 0 0 0 ;
+                @include media ('<=phone&tablet'){
+                    font-size: 25px;
+                    margin-top: -2%;
+                }
+                @include media ('>phone&tablet' , '<=tablet'){
+                    font-size: 38px;
+                    margin-top: -2%;
+                }
                 div{
                     overflow: hidden;
                 }
@@ -207,6 +258,12 @@ body {
                 }
                 h1{
                     transition: all .7s ease-in-out;
+                    @include media ('<=phone&tablet'){
+                        line-height: 110%;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                        line-height: 110%;
+                    }
                 }
             }
             .bottom-row{
@@ -223,18 +280,46 @@ body {
                         height: 120px;
                         border-radius: 50%;
                         border: 1px solid $circleBoth;
+                        @include media ('<=phone&tablet'){
+                            width: 59px;
+                            height: 59px;
+                            bottom: 0;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            width: 72px;
+                            height: 72px;
+                            left: 0;
+                            bottom: 1%;
+                        }
                     }
                     div:nth-child(1){
                         left: 2px;
+                        @include media ('<=phone&tablet'){
+                            left: 0;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){  
+                            left: 0;
+                        }
                     }
                     div:nth-child(2){
                         left: 42px;
                         z-index: 1;
                         border: 1px solid $circleOne;
-                        transition: all 5s ease;
+                        @include media ('<=phone&tablet'){
+                            left: 20px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            left: 25px;
+                        }
                     }
                     div:nth-child(3){
                         left: 80px;
+                        @include media ('<=phone&tablet'){
+                            left: 40px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){  
+                            left: 47px;
+                        }
                     }
                 }
                 .leading-text{
@@ -245,8 +330,22 @@ body {
                     align-items: flex-end;  
                     margin: 0 -20px -5px 0;
                     transition: all 1s ease;
+                    @include media ('<=phone&tablet'){
+                        font-size: 19px;
+                        padding: 0 20px 101px 0;
+                        line-height: 50%;
+                        color: #3e4042;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                        font-size: 14px;
+                        width: 35%;
+                        margin: 0 -1%;
+                    }
                     span {
                         padding : 20px 0 0 20px;
+                        @include media ('<=phone&tablet'){
+                            padding:  0;
+                        }
                     }
                 }
                 .leading-text-animation-support {
@@ -256,6 +355,14 @@ body {
                     right: 0;
                     top: 0;
                     transition: all 3s ease;
+                    @include media ('<=phone&tablet'){
+                        display: none;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                        font-size: 14px;
+                        width: 35%;
+                        margin: 0 -1%;
+                    }
                 }
             }
         }
@@ -266,34 +373,54 @@ body {
         position: relative;
         transition: all .5s ease;
         transition-delay: .5s;
-        // transform: translateY(-50%);
+        overflow: hidden;
+        transform: translateY(-50%);
         z-index: -1;
 
         cursor: url("./images//icon-upward.svg");
         .video-position { 
             width: 100%;
             height: 100%;
+            @include media ('<=phone&tablet'){
+                transform: translateX(-35%);
+                width: 500%;
+            }
+            @include media ('>phone&tablet' , '<=tablet'){
+                transform: translateX(-39%);
+                width: 500%;
+            }
         }
     }
     .expertise-section{
         width: 100%;
-        height: 100vh;
         border-top: 1px solid $bc;
         background-color: $light;
-        // transform: translateY(-50%);
+        transform: translateY(-50%);
         .container-expertise{
             @include maxWidth;
             height: 100%;
             padding: 0 140px 120px;
             display: flex;
             flex-direction: column;
+            @include media ('<=phone&tablet'){
+                padding: 0 30px 80px;
+            }
+            @include media ('>phone&tablet' , '<=tablet'){
+                padding: 0 5.9% 5.5%;
+            }
             .top-row{
                 width: 100%;
                 padding: 60px 0 30px 0;
                 display: flex;
                 justify-content: space-between;
+                @include media ('<=phone&tablet'){
+                    display: block;
+                    padding: 50px 0 80px;
+                }
+                @include media ('>phone&tablet' , '<=tablet'){
+                    padding: 4% 0 2.2% 0;
+                }
                 .learn-more{
-                    // padding: 0 20px;
                     .items{
                         display: flex;
                         div {
@@ -307,7 +434,15 @@ body {
                             border-radius: 50%;                       
                             background-color: #000;
                             margin-right: 21px;
-                            
+                            @include media ('<=phone&tablet'){
+                                margin: 0 0 25px 0;
+                            }
+                            @include media ('>phone&tablet' , '<=tablet'){
+                                width: 18px;
+                                height: 18px;
+                                font-size: 10px;
+                                margin-right: 15px;
+                            }
                         }
                         span {
                             height: 30px;
@@ -318,6 +453,13 @@ body {
                             padding: 0  16px;
                             background-color: $lm;
                             border-radius: 20px;
+                            @include media ('<=phone&tablet'){
+                                display: none;
+                            }
+                            @include media ('>phone&tablet' , '<=tablet'){
+                                height: 18px;
+                                font-size: 10px;
+                            }
                         }
 
                     }
@@ -325,15 +467,36 @@ body {
                 .headline{
                     width: 560px;
                     height: 100%;
+                    @include media ('<=phone&tablet'){
+                        width: auto;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                        width: 46.3%;
+                        margin-right: 1%;
+                    }
                     h2{ 
                         letter-spacing: -0.05em;    
                         font-size: 38px;
                         padding-bottom: 35px;
+                        @include media ('<=phone&tablet'){  
+                            font-size: 24px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            font-size: 24px;
+                            padding-bottom: 6%;
+                        }
                     }
                     p{
                         letter-spacing: -0.01em;
                         font-size: 22px;
                         margin-right: 10%;
+                        @include media ('<=phone&tablet'){
+                            margin-right: 0;
+                            font-size: 19px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -342,9 +505,22 @@ body {
                 height: 100%;
                 display: flex;
                 gap: 40px;
+                align-items: center;
                 font-size: 16px;
-                div {
-                    width: 100%;height: 100%;
+                @include media ('<=phone&tablet'){
+                    display: block;
+                    font-size: 15.8px;
+                }
+                @include media ('>phone&tablet' , '<=tablet'){
+                    font-size: 13px;
+                }
+                .art{
+                    @include media ('<=phone&tablet'){
+                        margin-bottom: 34px;
+                    }
+                    div {
+                        width: 100%;
+                    }
                 }
                 .space{
                     padding:10px 0 0.5%;
@@ -356,13 +532,19 @@ body {
         }
     }
     .our-apabilities-section{
+        transform: translateY(-50%);
         width: 100%;
-        height: 1101px;
         background-color: $oc;
         .apabilities{
             @include maxWidth;
             height: 100%;
             padding: 138px 140px 240px;
+            @include media ('<=phone&tablet'){
+                padding: 170px 30px 140px;
+            }
+            @include media ('>phone&tablet' , '<=tablet'){
+                padding: 13% 5.9% 18.5%;
+            }
             .content{
                 position: relative;
                 height: 100%;
@@ -375,27 +557,61 @@ body {
                         font-size: 16px;
                         font-weight: 100;
                         padding-top: 36px;
+                        @include media ('<=phone&tablet'){
+                            width: auto;
+                            position: absolute;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            font-size: 12px;
+                        }
                     }
                 }
                 .accordion{
                     display: flex;
                     flex-direction: column;
+                    @include media ('<=phone&tablet'){
+                        width: 100%;
+                        padding-top: 25%;
+                        padding-bottom: 20%;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                        width: 49%;
+                        padding-bottom: 17%;
+                    }
                     div:nth-child(1){
                         border: none;
+                        @include media ('<=phone&tablet'){
+                            border-top: 1px solid $ourB;
+                        }
                     }
                     div {
-                        width: 560px;
-                        height: 10px;
+                        width: 100%;
                         height: 99px;
                         color: $light;
-                        font-size: 34px;
                         display: flex;
                         border-top: 1px solid $ourB;
                         align-items: center;
                         justify-content: space-between;
+                        @include media ('<=phone&tablet'){
+                            height: 80px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            height: 48px;
+                        }
                         h3{ 
+                            font-size: 34px;
                             font-weight: 600;
                             letter-spacing: -0.07em;
+                            @include media ('<=phone&tablet'){
+                                font-size: 24px;
+                                letter-spacing: -0.01em;
+                                font-weight: 300;
+                            }
+                            @include media ('>phone&tablet' , '<=tablet'){
+                                font-size: 24px;
+                                font-weight: 300;
+                                letter-spacing: -0.01em;
+                            }
                         }
                         span {  
                             display: flex;
@@ -405,6 +621,22 @@ body {
                             width: 30px;
                             height: 30px;
                             background-color: $iconBack;
+                            @include media ('<=phone&tablet'){
+                                width: 20px;
+                                height: 20px;
+                                img{
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
+                            @include media ('>phone&tablet' , '<=tablet'){
+                                width: 18px;
+                                height: 18px;
+                                img{
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
                         }
                     }
                 }
@@ -421,26 +653,59 @@ body {
                         width: 256px;
                         height: 256px;
                         border-radius: 50%;
-                        border: 1px solid $bigCircle
+                        border: 1px solid $bigCircle;
+                        @include media ('<=phone&tablet'){
+                            display: none;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            width: 160px;
+                            height: 160px;
+                            top: 20%;
+                        }
                     }
                     div:nth-child(2){
                         left: 40px;
+                        @include media ('<=phone&tablet'){
+                            // padding: 0 30px 80px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            left: 25px;
+                        }
                     }
                     div:nth-child(3){
                         left: 80px;
+                        @include media ('<=phone&tablet'){
+                            // padding: 0 30px 80px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            left: 50px;
+                        }
                     }
                     div:nth-child(4){
                         left: 120px;
+                        @include media ('<=phone&tablet'){
+                            // padding: 0 30px 80px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            left: 75px;
+                        }
                     }
                     div:nth-child(5){
                         left: 160px;
+                        @include media ('<=phone&tablet'){
+                            // padding: 0 30px 80px;
+                        }
+                        @include media ('>phone&tablet' , '<=tablet'){
+                            left: 100px;
+                        }
                     }
                 }
             }
         }
     }
     .company-section{
-        width: 100%;   
+        width: 100%;  
+        overflow: hidden; 
         .company-content {
             @include maxWidth;
             padding: 60px 140px 0;

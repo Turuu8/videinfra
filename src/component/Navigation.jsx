@@ -1,5 +1,6 @@
 import { NavigationLists } from "../datas";
 import icon from "../images/icon-upward.svg";
+import menu from "../images/two-line-menu.svg";
 
 export const Navigation = () => {
   return (
@@ -26,6 +27,9 @@ export const Navigation = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="menu">
+          <img src={menu} alt="" />
         </div>
       </div>
     </div>
