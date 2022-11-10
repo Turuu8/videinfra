@@ -1,9 +1,9 @@
 export const NavigationLists = [
-  { title: "Work" },
-  { title: "Company" },
-  { title: "Blog" },
-  { title: "Career" },
-  { title: "Contact" },
+  { title: "Work", path: "/work" },
+  { title: "Company", path: "/company" },
+  { title: "Blog", path: "/blog" },
+  { title: "Career", path: "/career" },
+  { title: "Contact", path: "/contact" },
 ];
 
 export const CompanyCartsItems = [
