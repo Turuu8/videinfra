@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./Layout";
-import { CareerPage, HomePage, WorkPage } from "./page";
+import { CareerPage, ContactPage, HomePage, WorkPage } from "./page";
 
 export const RoutesComponent = () => {
   return (
@@ -12,7 +12,7 @@ export const RoutesComponent = () => {
           <Route path="/company" element={<WorkPage />} />
           <Route path="/blog" element={<WorkPage />} />
           <Route path="/career" element={<CareerPage />} />
-          <Route path="/contact" element={<WorkPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route />
         </Route>
       </Routes>
