@@ -8,10 +8,15 @@ export * from "./home-pgae/Company";
 export * from "./home-pgae/Insights";
 // home page export
 
-
 // career page export
 export * from "./career-page/Headline";
 export * from "./career-page/Discription";
 export * from "./career-page/Vacancies";
 // career page export
+
+// contact page export
+export * from "./contact-page/LocationPhone";
+export * from "./contact-page/WriteEmail";
+// contact page export
+
 export * from "./Footer";

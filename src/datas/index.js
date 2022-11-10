@@ -123,3 +123,15 @@ export const FooterLinks = [
   { item: "Behance" },
   { item: "Dribbble" },
 ];
+
+export const CareerPageList = [{ title: "Career", Size: "180px" }];
+export const ContactPageList = [
+  {
+    title: "Get In Touch",
+    downTitle: "info@videinfra.com",
+    Size: "90px",
+    color: "#fff",
+    pad: "-.06em",
+    height: "21%",
+  },
+];
