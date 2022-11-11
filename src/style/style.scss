@@ -39,7 +39,7 @@ body {
             display: flex;
             align-items: center;
         }
-        // animation: header-animation-row 1s ease ;
+        animation: header-animation-row 1s ease ;
         @include media ('<=phone&tablet') {
             padding:10px 30px;
             font-size: 16px;
@@ -60,6 +60,7 @@ body {
             }
         }
         .link-btn { 
+            width: 17%;
             font-weight: 100;
             display: flex;
             align-items: center;
@@ -121,8 +122,8 @@ body {
             animation: hover-above-text 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         }
         .list{
+            width: 44.5%;
             display: flex;
-            padding-left: 38%;
             @include media ('<=phone') {
                 display: none;
             }
@@ -134,15 +135,16 @@ body {
                 width: 50%;
             }
             ul {
-                width: auto;
+                width: 100%;
                 display: flex;
-                justify-content: flex-end;
+                justify-content:flex-end;
                 list-style: none;
-                gap: 14%;
+                gap: 5%;
                 li{ 
                     @include media ('<=tablet') {
                         margin:  0 9.5px;
                     }
+                    // padding: 2.4%;
                     a{
                         text-decoration: none;
                         color: black;
@@ -262,10 +264,5 @@ body {
                 font-size: 14px;
             }
         }
-    }
-}
-@include media ('>=desktop'){
-    .btn-content{
-        width: 10%;
     }
 }

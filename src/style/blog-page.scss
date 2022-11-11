@@ -1,0 +1,38 @@
+.blog-page{
+    width: 100%;
+    background-color: $light;
+    .headline-choose_btn-section {
+        @include maxWidth;
+        padding: 0 140px;
+        div:nth-child(1) {
+            padding: 128px 0 80px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid $lm;
+            .headline{
+                font-family: "Graphik LCG Medium";
+                letter-spacing: -.06em;                
+                font-size: 89px;
+                line-height: 83%;
+            }
+            .choose_btn {
+                padding-top: 23.4%;
+                display: flex;
+                button {
+                    background-color: $lm;
+                    margin-right: .5%;
+                    border: none;
+                    padding: 0 16px;
+                    height: 30px;
+                    font-size: 16px;
+                    border-radius: 20px;
+                    letter-spacing: -.005em;
+                }
+            }
+        }
+    }
+    .list-cards {
+        @include maxWidth;
+        padding:  80px 140px 320px;
+    }
+}
