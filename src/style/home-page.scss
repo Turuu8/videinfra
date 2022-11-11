@@ -678,43 +678,49 @@
                          letter-spacing: -0.01em;
                     }
                }
-               .insights-list {
-                    padding-top: 115px;
-                    display: flex;
-                    gap: 40px;
-                    div{
-                         width: 100%;
-                         height: 478px;
-                         border: 1px solid $lm;
-                    }
-                    .list {
-                         position: relative;
-                         img {
-                         width: 100%;
-                         height: 180px;
-                         }
-                         p{
-                         font-size: 22px;
-                         padding:40px ;
-                         }
-                         .duration{
-                         display: flex;
-                         flex-direction: column;
-                         font-size: 14px;
-                         padding: 40px;
-                         position: absolute;
-                         left: 0;
-                         bottom: 0;
-                         span:nth-child(1) {
-                              color: $bsSmi;
-                         }
-                         span:nth-child(2) {
-                              color: $oc;
-                         }
-                         }
-     
-                    }
-               }
           }
      }
      }
+.insights-list {
+     padding-top: 115px;
+     display: flex;
+     gap: 40px;
+
+     div {
+          width: 100%;
+          height: 478px;
+          border: 1px solid $lm;
+     }
+
+     .card-list {
+          position: relative;
+
+          img {
+               width: 100%;
+               height: 180px;
+          }
+
+          p {
+               font-size: 22px;
+               padding: 40px;
+          }
+
+          .duration {
+               display: flex;
+               flex-direction: column;
+               font-size: 14px;
+               padding: 40px;
+               position: absolute;
+               left: 0;
+               bottom: 0;
+
+               span:nth-child(1) {
+                    color: $bsSmi;
+               }
+
+               span:nth-child(2) {
+                    color: $oc;
+               }
+          }
+     }
+}

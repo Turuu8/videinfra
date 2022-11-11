@@ -1,4 +1,5 @@
 import { InsightsLists } from "../../datas";
+import { Card } from "./Card";
 
 export const Insights = () => {
   return (
@@ -8,15 +9,8 @@ export const Insights = () => {
         <p>Read Our Blog</p>
       </div>
       <div className="insights-list">
-        {InsightsLists.map(({ url, text, min, type }, i) => (
-          <div key={i} className="list">
-            <img src={url} alt="" />
-            <p>{text}</p>
-            <span className="duration">
-              <span>{min}</span>
-              <span>{type}</span>
-            </span>
-          </div>
+        {InsightsLists.map((el, i) => (
+          <Card key={i} {...el} />
         ))}
       </div>
     </div>
