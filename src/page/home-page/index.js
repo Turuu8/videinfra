@@ -10,7 +10,7 @@ import { ExpertiseItems } from "../../datas";
 
 export const HomePage = () => {
   return (
-    <>
+    <div className="home-page">
       <section className="top-pointer-events-section">
         <div className="background" />
         <div className="intro">
@@ -34,6 +34,6 @@ export const HomePage = () => {
       <section className="insights-section">
         <Insights />
       </section>
-    </>
+    </div>
   );
 };

@@ -5,7 +5,7 @@ export const Layout = () => {
   return (
     <>
       <Navigation />
-      <main className="home-page">
+      <main>
         <Outlet />
       </main>
       <Footer />
