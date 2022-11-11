@@ -9,7 +9,7 @@ export const Insights = () => {
       </div>
       <div className="insights-list">
         {InsightsLists.map(({ url, text, min, type }, i) => (
-          <div className="list">
+          <div key={i} className="list">
             <img src={url} alt="" />
             <p>{text}</p>
             <span className="duration">
@@ -22,4 +22,3 @@ export const Insights = () => {
     </div>
   );
 };
-

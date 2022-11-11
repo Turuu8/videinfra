@@ -1,0 +1,720 @@
+.home-page{
+     .top-pointer-events-section{
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          @include maxWidth;
+          .background{
+               height: 100%;
+               width: 100%;
+               transition: all .2s  ;
+               background-color: $main;
+          }
+          .intro{
+               position: absolute;
+               background-color: $main;
+               box-sizing: border-box;
+               width: 100%;
+               top: 0;
+               display: flex;
+               padding: 105px 140px 60px;
+               height: 73.5vh;
+               flex-direction: column;
+               justify-content: space-between;
+               overflow: hidden;
+               z-index: 5;
+               transition: all .19s;
+               @include media ('<=phone&tablet'){
+                    padding: 84px 30px 40px;
+               }
+               @include media ('>phone&tablet' , '<=tablet'){
+                    padding: 6.5% 6% 30px;
+               }
+               .headline-word{
+                    font-size: 60px;
+                    // font-weight: 100;
+                    letter-spacing: -0.09em;
+                    line-height: 100px;
+                    margin: -2% 0 0 0 ;
+                    @include media ('<=phone&tablet'){
+                         font-size: 25px;
+                         margin-top: -2%;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                         font-size: 38px;
+                         margin-top: -2%;
+                    }
+                    div{
+                         overflow: hidden;
+                    }
+                    div:nth-child(2){
+                         color: white;
+                         font-family: "Graphik LCG Medium";
+                         margin-top: -1% ;
+                    }
+                    h1{
+                         font-family: "Graphik LCG Medium";
+                         transition: all .7s ease-in-out;
+                         @include media ('<=phone&tablet'){
+                         line-height: 110%;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                         line-height: 110%;
+                         }
+                         span{
+                              font-family: "Graphik LCG Medium";
+                         }
+                    }
+               }
+               .bottom-row{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 126px;
+                    width: 100%;
+                    position: relative;
+                    .cricles{
+                         position: relative;
+                         div {
+                         position: absolute;
+                         width: 120px;
+                         height: 120px;
+                         border-radius: 50%;
+                         border: 1px solid $circleBoth;
+                         @include media ('<=phone&tablet'){
+                              width: 59px;
+                              height: 59px;
+                              bottom: 0;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              width: 72px;
+                              height: 72px;
+                              left: 0;
+                              bottom: 1%;
+                         }
+                         }
+                         div:nth-child(1){
+                         left: 2px;
+                         @include media ('<=phone&tablet'){
+                              left: 0;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){  
+                              left: 0;
+                         }
+                         }
+                         div:nth-child(2){
+                         left: 42px;
+                         z-index: 1;
+                         border: 1px solid $circleOne;
+                         @include media ('<=phone&tablet'){
+                              left: 20px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              left: 25px;
+                         }
+                         }
+                         div:nth-child(3){
+                         left: 80px;
+                         @include media ('<=phone&tablet'){
+                              left: 40px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){  
+                              left: 47px;
+                         }
+                         }
+                    }
+                    .leading-text{
+                         width: 400px;
+                         box-sizing: border-box;
+                         font-size: 22px;
+                         display: flex;
+                         align-items: flex-end;  
+                         margin: 0 -20px -5px 0;
+                         transition: all 1s ease;
+                         @include media ('<=phone&tablet'){
+                         font-size: 19px;
+                         padding: 0 20px 101px 0;
+                         line-height: 50%;
+                         color: #3e4042;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                         font-size: 14px;
+                         width: 35%;
+                         margin: 0 -1%;
+                         }
+                         span {
+                         padding : 20px 0 0 20px;
+                         @include media ('<=phone&tablet'){
+                              padding:  0;
+                         }
+                         }
+                    }
+                    .leading-text-animation-support {
+                         width: 400px;
+                         height: 100%;
+                         position: absolute;
+                         right: 0;
+                         top: 0;
+                         transition: all 3s ease;
+                         @include media ('<=phone&tablet'){
+                         display: none;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                         font-size: 14px;
+                         width: 35%;
+                         margin: 0 -1%;
+                         }
+                    }
+               }
+          }
+     }
+     .video-section{
+          width: 100%;
+          height: 100vh;
+          position: relative;
+          transition: all .5s ease;
+          transition-delay: .5s;
+          overflow: hidden;
+          transform: translateY(-50%);
+          z-index: -1;
+     
+          cursor: url("./images//icon-upward.svg");
+          .video-position { 
+               width: 100%;
+               height: 100%;
+               @include media ('<=phone&tablet'){
+                    transform: translateX(-35%);
+                    width: 500%;
+               }
+               @include media ('>phone&tablet' , '<=tablet'){
+                    transform: translateX(-39%);
+                    width: 500%;
+               }
+          }
+     }
+     .expertise-section{
+          width: 100%;
+          border-top: 1px solid $bc;
+          background-color: $light;
+          transform: translateY(-50%);
+          .container-expertise{
+               @include maxWidth;
+               height: 100%;
+               padding: 0 140px 120px;
+               display: flex;
+               flex-direction: column;
+               @include media ('<=phone&tablet'){
+                    padding: 0 30px 80px;
+               }
+               @include media ('>phone&tablet' , '<=tablet'){
+                    padding: 0 5.9% 5.5%;
+               }
+               .top-row{
+                    width: 100%;
+                    padding: 60px 0 30px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    @include media ('<=phone&tablet'){
+                         display: block;
+                         padding: 50px 0 80px;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                         padding: 4% 0 2.2% 0;
+                    }
+                    .learn-more{
+                         .items{
+                         display: flex;
+                         div {
+                              font-size: 14px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center ;
+                              color: $light;     
+                              width: 30px;
+                              height: 30px;
+                              border-radius: 50%;                       
+                              background-color: #000;
+                              margin-right: 21px;
+                              @include media ('<=phone&tablet'){
+                                   margin: 0 0 25px 0;
+                              }
+                              @include media ('>phone&tablet' , '<=tablet'){
+                                   width: 18px;
+                                   height: 18px;
+                                   font-size: 10px;
+                                   margin-right: 15px;
+                              }
+                         }
+                         span {
+                              height: 30px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-size: 16px;
+                              padding: 0  16px;
+                              background-color: $lm;
+                              border-radius: 20px;
+                              @include media ('<=phone&tablet'){
+                                   display: none;
+                              }
+                              @include media ('>phone&tablet' , '<=tablet'){
+                                   height: 18px;
+                                   font-size: 10px;
+                              }
+                         }
+     
+                         }
+                    }
+                    .headline{
+                         width: 560px;
+                         height: 100%;
+                         @include media ('<=phone&tablet'){
+                         width: auto;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                         width: 46.3%;
+                         margin-right: 1%;
+                         }
+                         h2{ 
+                              font-family: "Graphik LCG Medium";
+                         letter-spacing: -0.05em;    
+                         font-size: 38px;
+                         padding-bottom: 35px;
+                         @include media ('<=phone&tablet'){  
+                              font-size: 24px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              font-size: 24px;
+                              padding-bottom: 6%;
+                         }
+                         }
+                         p{
+                         letter-spacing: -0.01em;
+                         font-size: 22px;
+                         margin-right: 10%;
+                         @include media ('<=phone&tablet'){
+                              margin-right: 0;
+                              font-size: 19px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              font-size: 14px;
+                         }
+                         }
+                    }
+               }
+               .bottom-works{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    gap: 40px;
+                    align-items: center;
+                    font-size: 16px;
+                    @include media ('<=phone&tablet'){
+                         display: block;
+                         font-size: 15.8px;
+                    }
+                    @include media ('>phone&tablet' , '<=tablet'){
+                         font-size: 13px;
+                    }
+                    .art{
+                         @include media ('<=phone&tablet'){
+                         margin-bottom: 34px;
+                         }
+                         div {
+                         width: 100%;
+                         }
+                    }
+                    .space{
+                         padding:10px 0 0.5%;
+                    }
+                    .type-art {
+                         color: $bsSmi;
+                    }
+               }
+          }
+     }
+     .our-apabilities-section{
+          transform: translateY(-50%);
+          width: 100%;
+          background-color: $oc;
+          .apabilities{
+               @include maxWidth;
+               height: 100%;
+               padding: 138px 140px 240px;
+               @include media ('<=phone&tablet'){
+                    padding: 170px 30px 140px;
+               }
+               @include media ('>phone&tablet' , '<=tablet'){
+                    padding: 13% 5.9% 18.5%;
+               }
+               .content{
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .headline{
+                         h5{
+                         color: $light;
+                         width: 60px;
+                         font-size: 16px;
+                         font-weight: 100;
+                         padding-top: 36px;
+                         @include media ('<=phone&tablet'){
+                              width: auto;
+                              position: absolute;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              font-size: 12px;
+                         }
+                         }
+                    }
+                    .accordion{
+                         display: flex;
+                         flex-direction: column;
+                         width: 47%;
+                         @include media ('<=phone&tablet'){
+                         width: 100%;
+                         padding-top: 25%;
+                         padding-bottom: 20%;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                         width: 49%;
+                         padding-bottom: 17%;
+                         }
+                         div:nth-child(1){
+                         border: none;
+                         @include media ('<=phone&tablet'){
+                              border-top: 1px solid $ourB;
+                         }
+                         }
+                         div {
+                         width: 100%;
+                         height: 99px;
+                         color: $light;
+                         display: flex;
+                         border-top: 1px solid $ourB;
+                         align-items: center;
+                         justify-content: space-between;
+                         @include media ('<=phone&tablet'){
+                              height: 80px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              height: 48px;
+                         }
+                         h3{ 
+                              font-size: 34px;
+                              font-family: "Graphik LCG Medium";
+                              letter-spacing: -0.07em;
+                              @include media ('<=phone&tablet'){
+                                   font-size: 24px;
+                                   letter-spacing: -0.01em;
+                                   font-weight: 300;
+                              }
+                              @include media ('>phone&tablet' , '<=tablet'){
+                                   font-size: 24px;
+                                   font-weight: 300;
+                                   letter-spacing: -0.01em;
+                              }
+                         }
+                         span {  
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              border-radius: 50%;
+                              width: 30px;
+                              height: 30px;
+                              background-color: $iconBack;
+                              @include media ('<=phone&tablet'){
+                                   width: 20px;
+                                   height: 20px;
+                                   img{
+                                        width: 14px;
+                                        height: 14px;
+                                   }
+                              }
+                              @include media ('>phone&tablet' , '<=tablet'){
+                                   width: 18px;
+                                   height: 18px;
+                                   img{
+                                        width: 14px;
+                                        height: 14px;
+                                   }
+                              }
+                         }
+                         }
+                    }
+                    .big-cricles{
+                         position: absolute;
+                         margin: auto;
+                         top: 0;
+                         bottom: 0;
+                         div { 
+                         margin: auto;
+                         top: 0;
+                         bottom: 5%;
+                         position: absolute;
+                         width: 256px;
+                         height: 256px;
+                         border-radius: 50%;
+                         border: 1px solid $bigCircle;
+                         @include media ('<=phone&tablet'){
+                              display: none;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              width: 160px;
+                              height: 160px;
+                              top: 20%;
+                         }
+                         }
+                         div:nth-child(2){
+                         left: 40px;
+                         @include media ('<=phone&tablet'){
+                              // padding: 0 30px 80px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              left: 25px;
+                         }
+                         }
+                         div:nth-child(3){
+                         left: 80px;
+                         @include media ('<=phone&tablet'){
+                              // padding: 0 30px 80px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              left: 50px;
+                         }
+                         }
+                         div:nth-child(4){
+                         left: 120px;
+                         @include media ('<=phone&tablet'){
+                              // padding: 0 30px 80px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              left: 75px;
+                         }
+                         }
+                         div:nth-child(5){
+                         left: 160px;
+                         @include media ('<=phone&tablet'){
+                              // padding: 0 30px 80px;
+                         }
+                         @include media ('>phone&tablet' , '<=tablet'){
+                              left: 100px;
+                         }
+                         }
+                    }
+               }
+          }
+     }
+     .company-section{
+          width: 100%;  
+          overflow: hidden; 
+          .company-content {
+               @include maxWidth;
+               padding: 60px 140px 0;
+               height: 100%;
+               .head-row{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 387px;
+                    h2{
+                         margin-top: 6px;
+                         font-size: 16px;
+                         font-weight: 100;
+                    }
+                    span{
+                         width: 50%;
+                         padding:  0  0 120px 0;
+                         margin-right: -20px;
+                         font-size: 38px;
+                         font-weight: 600;
+                         max-width: 720px;
+                         letter-spacing: -0.05em;
+                         line-height: 39px;
+                    }
+               }
+               .years{
+                    width: 100%;
+                    height: 190px;
+                    display: flex;
+                    justify-content: flex-end;
+                    div {
+                         width: 50%;
+                         margin-right: -20px;
+                         display: flex;
+                         justify-content: space-between;
+                         border-bottom: 1px solid $bc;
+                         padding-bottom:60px ;
+                         p:nth-child(1) {
+                         font-size: 180px;
+                         color: $light;
+                         font-weight: 600;
+                         letter-spacing: -0.05em;
+                         margin: 0;
+                         padding: 0;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         }
+                         p:nth-child(2) {
+                         width: 100px;
+                         display: flex;
+                         text-align: end;
+                         justify-content:flex-end;
+                         align-items: flex-end;
+                         padding-right: 20px;
+                         }
+                    }
+               }
+               .about-as{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 60px 0 180px 0;
+                    div {
+                         margin-right: -20px;
+                         width: 50%;
+                         span {
+                         height: 30px;
+                         padding: 5px 20px;
+                         background-color: $iconBackColor;
+                         border-radius: 20px;
+                         }
+                    }
+               }
+               .btn-cart{
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    gap: 8px;
+                    padding-bottom: 40px;
+                    button{
+                         border: none;
+                         width: 30px;
+                         height: 100%;
+                         background-color: $iconBackColor;
+                         border-radius: 50%;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         cursor: pointer;
+                    }
+                    img{
+                         width: 65%;
+                    }
+                    button:nth-child(1 ){
+                         img{
+                         opacity: .4;
+                         transform: rotate(180deg);
+                         }
+                    }
+               }
+               .carts{
+                    width: 500%;
+                    display: flex;
+                    overflow: scroll;
+                    gap: 40px;
+                    padding-bottom: 240px;
+                    .cart{
+                         position: relative;
+                         width: 560px;
+                         height: 480px;
+                         background-color: $light;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         p {
+                         position: absolute;
+                         left: 0;
+                         bottom: 0;
+                         padding: 40px;
+                         }
+                         .btn-add {
+                         position: absolute;
+                         right: 0;
+                         bottom: 0;
+                         padding: 40px;
+                         div {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              border-radius: 50%;
+                              width: 30px;
+                              height: 30px ;
+                              background-color: $lm;
+                         }
+                         img{
+                              height: 13px;
+                         }
+                         }
+                    }
+               }
+          }
+     }
+     .insights-section{
+          width: 100%;
+          background-color: $light;
+          padding-top: 13px;
+          .insights-content {
+               @include maxWidth;
+               padding: 30px 140px 240px;
+               .head-row{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1{
+                         font-size: 89px;
+                         letter-spacing: -0.05em;
+                    }
+                    p{  
+                         height: 30px;
+                         background-color: $lm;
+                         padding: 0 20px ;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         border-radius: 20px;
+                         letter-spacing: -0.01em;
+                    }
+               }
+               .insights-list {
+                    padding-top: 115px;
+                    display: flex;
+                    gap: 40px;
+                    div{
+                         width: 100%;
+                         height: 478px;
+                         border: 1px solid $lm;
+                    }
+                    .list {
+                         position: relative;
+                         img {
+                         width: 100%;
+                         height: 180px;
+                         }
+                         p{
+                         font-size: 22px;
+                         padding:40px ;
+                         }
+                         .duration{
+                         display: flex;
+                         flex-direction: column;
+                         font-size: 14px;
+                         padding: 40px;
+                         position: absolute;
+                         left: 0;
+                         bottom: 0;
+                         span:nth-child(1) {
+                              color: $bsSmi;
+                         }
+                         span:nth-child(2) {
+                              color: $oc;
+                         }
+                         }
+     
+                    }
+               }
+          }
+     }
+     }
