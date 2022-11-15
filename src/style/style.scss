@@ -1,6 +1,7 @@
 @import "../component/responsive-breakpoints/breakpoints.scss";
 @import "./_colors-mixins";
 @import "./home-page";
+@import "./work-page";
 @import "./blog-page";
 @import "./career-page";
 @import "./contact-page";
@@ -12,7 +13,9 @@
     font-family: "Graphik LCG Regular",Arial,sans-serif;
     font-weight: 100;
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 body {
     background-color: $main;
 }
@@ -22,7 +25,6 @@ body {
     position: fixed ;
     z-index: 10;
     width: 100%;    
-    background-color: $main;
     border-bottom: 1px solid $bc;
     padding: 14.5px 0;
     .header-content { 

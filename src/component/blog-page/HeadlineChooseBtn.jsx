@@ -1,20 +1,22 @@
 import React from "react";
 
-export const HeadlineChooseBtn = () => {
+export const HeadlineChooseBtn = (props) => {
   return (
     <div>
-      <h1 className="headline">Insights</h1>
+      <h1
+        className="headline"
+        style={{
+          fontSize: props.fontSize,
+        }}
+      >
+        {props.title}
+      </h1>
       <div className="choose_btn">
-        <button>All Posts</button>
-        <button>News</button>
-        <button>Awards</button>
-        <button>UX design</button>
-        <button>Telecom</button>
-        <button>eCommerce</button>
-        <button>Luxury</button>
-        <button>Real estate</button>
-        <button>Strategy</button>
-        <button>Marketplaces</button>
+        {props.btns.map((el, i) => (
+          <button key={i} value={el.btnText}>
+            {el.btnText}
+          </button>
+        ))}
       </div>
     </div>
   );

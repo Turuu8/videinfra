@@ -1,4 +1,6 @@
 export * from "./Navigation";
+
+export * from "./JumpHomePageText";
 // home page export
 export * from "./home-pgae/Intro";
 export * from "./home-pgae/Video";
@@ -11,6 +13,7 @@ export * from "./home-pgae/Insights";
 // blog page export
 export * from "./blog-page/HeadlineChooseBtn";
 export * from "./blog-page/ListCard";
+export * from "./blog-page/LeaveEmail";
 // blog page export
 
 // career page export
@@ -23,6 +26,5 @@ export * from "./career-page/Vacancies";
 export * from "./contact-page/LocationPhone";
 export * from "./contact-page/WriteEmail";
 // contact page export
-
 
 export * from "./Footer";

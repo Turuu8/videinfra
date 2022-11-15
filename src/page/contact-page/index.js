@@ -1,4 +1,9 @@
-import { Headline, LocationPhone, WriteEmail } from "../../component";
+import {
+  Headline,
+  JumpHomePageText,
+  LocationPhone,
+  WriteEmail,
+} from "../../component";
 import { ContactPageList } from "../../datas";
 
 export const ContactPage = () => {
@@ -14,6 +19,7 @@ export const ContactPage = () => {
       </section>
       <section className="write-email-section">
         <WriteEmail />
+        <JumpHomePageText props={"Contact"} />
       </section>
     </div>
   );

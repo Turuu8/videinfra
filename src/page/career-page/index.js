@@ -1,4 +1,9 @@
-import { Discription, Headline, Vacancies } from "../../component";
+import {
+  Discription,
+  Headline,
+  JumpHomePageText,
+  Vacancies,
+} from "../../component";
 import { CareerPageList } from "../../datas";
 
 export const CareerPage = () => {
@@ -14,6 +19,7 @@ export const CareerPage = () => {
       </section>
       <section className="vacancies-section">
         <Vacancies />
+        <JumpHomePageText props={"Career"} />
       </section>
     </div>
   );

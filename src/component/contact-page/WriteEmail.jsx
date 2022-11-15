@@ -40,9 +40,6 @@ export const WriteEmail = () => {
           </div>
         </div>
       </div>
-      <div className="btn-home-page-jump">
-        <button>Homepage</button> &nbsp;/&nbsp; Contact
-      </div>
     </div>
   );
 };

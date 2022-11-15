@@ -15,9 +15,6 @@ export const Vacancies = () => {
           </div>
         </span>
       </div>
-      <div className="btn-home-page-jump">
-        <button>Homepage</button> &nbsp;/&nbsp; Career
-      </div>
     </div>
   );
 };

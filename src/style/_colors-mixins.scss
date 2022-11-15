@@ -17,6 +17,10 @@ $bigCircle: #45494a;
 @mixin logo {
      width: 180px;
      font-weight: 600;
+     a{
+          text-decoration: none;
+          color: $oc;
+     }
 }
 @mixin maxWidth {
      box-sizing: border-box;
@@ -63,15 +67,46 @@ $bigCircle: #45494a;
      }
      }
 }
-@mixin JumpHome {
 .btn-home-page-jump {
+     @include maxWidth;
      padding: 0 140px 80px;
      color: $bsSmi;
      font-size: 14px;
-     button {
+     a { 
+          text-decoration: none;
           color: $bsSmi;
           background-color: $light;
           border: none;
      }
 }
-}
+
+.headline-choose_btn-section {
+     @include maxWidth;
+     padding: 0 140px;
+     div:nth-child(1) {
+       padding: 128px 0 80px;
+       display: flex;
+       flex-direction: column;
+       border-bottom: 1px solid $lm;
+       position: relative;
+       .headline {
+         font-family: "Graphik LCG Medium";
+         letter-spacing: -0.06em;
+         font-size: 89px;
+         line-height: 83%;
+       }
+       .choose_btn {
+          position: absolute;
+         display: flex;
+         button {
+           margin-right: 0.5%;
+           border: none;
+           padding: 0 16px;
+           height: 30px;
+           font-size: 16px;
+           border-radius: 20px;
+           letter-spacing: -0.005em;
+         }
+       }
+     }
+   }
