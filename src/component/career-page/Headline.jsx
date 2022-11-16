@@ -25,11 +25,9 @@ export const Headline = (props) => {
           {props.downTitle}
         </h1>
       )}
-      {/* <div> */}
       <button>
         <img src={downLine} alt="" />
       </button>
-      {/* </div> */}
     </div>
   );
 };

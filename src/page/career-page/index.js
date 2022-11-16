@@ -4,7 +4,7 @@ import {
   JumpHomePageText,
   Vacancies,
 } from "../../component";
-import { CareerPageList } from "../../datas";
+import { CareerPageList, CareerPageTextItems } from "../../datas";
 
 export const CareerPage = () => {
   return (
@@ -15,7 +15,9 @@ export const CareerPage = () => {
         ))}
       </section>
       <section className="discription-section">
-        <Discription />
+        {CareerPageTextItems.map((el, i) => (
+          <Discription key={i} {...el} />
+        ))}
       </section>
       <section className="vacancies-section">
         <Vacancies />

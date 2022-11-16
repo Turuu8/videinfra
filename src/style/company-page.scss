@@ -1,0 +1,47 @@
+.company-page {
+     width: 100%;
+     @include headline;
+     .status-number-section{
+          @include maxWidth; 
+          padding: 0 140px; 
+          display: flex;
+          justify-content: flex-end;
+          .content-status-number{
+               padding: 120px 0 0 20px;
+               box-sizing: border-box;
+               width: 50%;
+               .special-number{
+                    width: 100%;
+                    padding: 0 0 5px 0;
+                    font-size: 180px;
+                    color: $light;
+                    border-bottom: 1px solid $bc;
+                    span{
+                         font-family: "Graphik LCG Medium";
+                         letter-spacing: -0.07em;
+                    }
+               }
+               h3{
+                    letter-spacing: -0.03em;
+                    font-size: 16px;
+                    padding: 42px 0;
+               }
+               .years-members{
+                    width: 100%;
+                    display: flex;
+                    padding: 80px 0 ;
+                    gap: 40px;
+                    margin-bottom: 20px;
+                    div {
+                         width: 45%;
+                         h1{
+                              border-bottom: 1px solid $bc;
+                              font-size: 90px;
+                              font-family: "Graphik LCG Medium";
+                              letter-spacing: -0.06em;
+                         }
+                    }
+               }
+          }
+     }
+}
