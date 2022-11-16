@@ -10,6 +10,14 @@ export * from "./home-pgae/Company";
 export * from "./home-pgae/Insights";
 // home page export
 
+// company page export
+export * from "./company-page/StatusNumber";
+// company page export
+
+// work page export
+export * from "./work-page/WorkPageCards";
+// work page export
+
 // blog page export
 export * from "./blog-page/HeadlineChooseBtn";
 export * from "./blog-page/ListCard";

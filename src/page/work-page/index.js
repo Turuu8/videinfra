@@ -1,6 +1,12 @@
-import { HeadlineChooseBtn } from "../../component";
-import { JumpHomePageText } from "../../component/JumpHomePageText";
-import { WorkPageHeadelineChooseBtns } from "../../datas/work-page";
+import {
+  HeadlineChooseBtn,
+  JumpHomePageText,
+  WorkPageCards,
+} from "../../component";
+import {
+  WorkPageCardItens,
+  WorkPageHeadelineChooseBtns,
+} from "../../datas/work-page";
 export const WorkPage = () => {
   return (
     <div className="work-page">
@@ -9,10 +15,11 @@ export const WorkPage = () => {
           <HeadlineChooseBtn key={i} {...el} />
         ))}
       </section>
-      <section>hello</section>
-      <section>hello</section>
-      <section>hello</section>
-      <section>hello</section>
+      <section className="work-cards-section">
+        {WorkPageCardItens.map((el, i) => (
+          <WorkPageCards key={i} {...el} />
+        ))}
+      </section>
       <JumpHomePageText props="Work" />
     </div>
   );

@@ -88,15 +88,16 @@ $bigCircle: #45494a;
        display: flex;
        flex-direction: column;
        border-bottom: 1px solid $lm;
-       position: relative;
+       justify-content: space-between;
+       height: 640px;
        .headline {
+          box-sizing: border-box;
          font-family: "Graphik LCG Medium";
          letter-spacing: -0.06em;
          font-size: 89px;
          line-height: 83%;
        }
        .choose_btn {
-          position: absolute;
          display: flex;
          button {
            margin-right: 0.5%;

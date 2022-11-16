@@ -43,16 +43,17 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e8e8e8;
-  position: relative;
+  justify-content: space-between;
+  height: 640px;
 }
 .headline-choose_btn-section div:nth-child(1) .headline {
+  box-sizing: border-box;
   font-family: "Graphik LCG Medium";
   letter-spacing: -0.06em;
   font-size: 89px;
   line-height: 83%;
 }
 .headline-choose_btn-section div:nth-child(1) .choose_btn {
-  position: absolute;
   display: flex;
 }
 .headline-choose_btn-section div:nth-child(1) .choose_btn button {
@@ -901,8 +902,149 @@
   color: #191b1d;
 }
 
+.company-page {
+  width: 100%;
+}
+.company-page .headline-section {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 140px;
+  width: 100%;
+  height: 640px;
+}
+.company-page .headline-section .content-headline {
+  box-sizing: border-box;
+  padding: 128px 0 80px;
+  height: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(25, 27, 29, 0.1019607843);
+}
+.company-page .headline-section .content-headline h1 {
+  font-weight: 100;
+  font-family: "Graphik LCG Medium", Arial, sans-serif;
+  letter-spacing: -0.075em;
+  line-height: 80%;
+  color: #191b1d;
+}
+.company-page .headline-section .content-headline button {
+  border: none;
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  width: 20px;
+  height: 20px;
+  background-color: #191b1d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-page .headline-section .content-headline button img {
+  width: 70%;
+}
+.company-page .status-number-section {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+.company-page .status-number-section .content-status-number {
+  padding: 120px 0 0 20px;
+  box-sizing: border-box;
+  width: 50%;
+}
+.company-page .status-number-section .content-status-number .special-number {
+  width: 100%;
+  padding: 0 0 5px 0;
+  font-size: 180px;
+  color: #fff;
+  border-bottom: 1px solid rgba(25, 27, 29, 0.1019607843);
+}
+.company-page .status-number-section .content-status-number .special-number span {
+  font-family: "Graphik LCG Medium";
+  letter-spacing: -0.07em;
+}
+.company-page .status-number-section .content-status-number h3 {
+  letter-spacing: -0.03em;
+  font-size: 16px;
+  padding: 42px 0;
+}
+.company-page .status-number-section .content-status-number .years-members {
+  width: 100%;
+  display: flex;
+  padding: 80px 0;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.company-page .status-number-section .content-status-number .years-members div {
+  width: 45%;
+}
+.company-page .status-number-section .content-status-number .years-members div h1 {
+  border-bottom: 1px solid rgba(25, 27, 29, 0.1019607843);
+  font-size: 90px;
+  font-family: "Graphik LCG Medium";
+  letter-spacing: -0.06em;
+}
+
 .work-page {
   background-color: #fff;
+}
+.work-page .work-cards-section {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 80px 140px 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 70px;
+}
+.work-page .work-cards-section .card-container {
+  width: 100%;
+}
+.work-page .work-cards-section .card-container .card-image {
+  width: 100%;
+  position: relative;
+}
+.work-page .work-cards-section .card-container .card-image img {
+  width: 100%;
+}
+.work-page .work-cards-section .card-container .card-image .plus {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 6%;
+  height: 30px;
+  width: 30px;
+  background-color: #d1cfce;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-page .work-cards-section .card-container .card-image .plus img {
+  width: 12px;
+  height: 12px;
+}
+.work-page .work-cards-section .card-container h2 {
+  padding-top: 1%;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+}
+.work-page .work-cards-section .card-container h2 p {
+  line-height: 140%;
+}
+.work-page .work-cards-section .card-container h2 p:nth-child(2) {
+  color: rgba(25, 27, 29, 0.5019607843);
 }
 
 .blog-page {
@@ -1084,7 +1226,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 72px 140px 360px;
+  padding: 72px 140px 0;
 }
 .career-page .discription-section .content-discription div {
   display: flex;
@@ -1107,6 +1249,7 @@
 .career-page .vacancies-section {
   width: 100%;
   background-color: #fff;
+  margin-top: 360px;
 }
 .career-page .vacancies-section .content-vacancies {
   box-sizing: border-box;
@@ -1149,6 +1292,37 @@
 }
 .career-page .vacancies-section .content-vacancies .work-vacancies span div img {
   width: 60%;
+}
+
+.discription-section {
+  width: 100%;
+}
+.discription-section .content-discription {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 72px 140px 0;
+}
+.discription-section .content-discription div {
+  display: flex;
+  justify-content: space-between;
+}
+.discription-section .content-discription div h5 {
+  font-size: 16px;
+  letter-spacing: -0.03em;
+}
+.discription-section .content-discription div h5 p:nth-child(2) {
+  color: #fff;
+}
+.discription-section .content-discription div span {
+  margin-top: -5px;
+  box-sizing: border-box;
+  font-size: 22px;
+  padding: 0 20px;
+  width: 50%;
+  letter-spacing: -0.05em;
 }
 
 .contact-page {

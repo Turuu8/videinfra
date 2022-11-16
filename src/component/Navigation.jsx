@@ -7,7 +7,8 @@ export const Navigation = () => {
   return (
     <div
       style={{
-        backgroundColor: href === "blog" ? "#fff" : "#cdcecf",
+        backgroundColor:
+          href === "blog" ? "#fff" : href === "work" ? "#fff" : "#cdcecf",
       }}
       className="navigation"
     >
@@ -21,7 +22,12 @@ export const Navigation = () => {
           <span>Expertise</span>
           <div
             style={{
-              backgroundColor: href === "blog" ? "#eaebeb" : "#bbbcbd",
+              backgroundColor:
+                href === "blog"
+                  ? "#eaebeb"
+                  : href === "work"
+                  ? "#eaebeb"
+                  : "#bbbcbd",
             }}
             className="hover-icon"
           >
