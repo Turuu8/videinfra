@@ -12,6 +12,10 @@ export * from "./home-pgae/Insights";
 
 // company page export
 export * from "./company-page/StatusNumber";
+export * from "./company-page/DirectorPeople";
+export * from "./company-page/ClientTile";
+export * from "./company-page/OurClientContent";
+export * from "./company-page/RecognitionContent";
 // company page export
 
 // work page export
@@ -26,6 +30,7 @@ export * from "./blog-page/LeaveEmail";
 
 // career page export
 export * from "./career-page/Headline";
+export * from "./career-page/Discription";
 export * from "./career-page/Discription";
 export * from "./career-page/Vacancies";
 // career page export

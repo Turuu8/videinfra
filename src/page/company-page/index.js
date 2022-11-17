@@ -1,6 +1,14 @@
 import React from "react";
-import { Discription, Headline, StatusNumber } from "../../component";
 import {
+  DirectorPeople,
+  Discription,
+  Headline,
+  OurClientContent,
+  RecognitionContent,
+  StatusNumber,
+} from "../../component";
+import {
+  CompanyPageDirectorPeoples,
   CompanyPageList,
   CompanyPageTextItems,
 } from "../../datas/company-page";
@@ -20,6 +28,17 @@ export const CompanyPage = () => {
       </section>
       <section className="status-number-section">
         <StatusNumber />
+      </section>
+      <section className="director-people-section">
+        {CompanyPageDirectorPeoples.map((el, i) => (
+          <DirectorPeople key={i} {...el} />
+        ))}
+      </section>
+      <section className="our-clients-section">
+        <OurClientContent />
+      </section>
+      <section className="recognition-section">
+        <RecognitionContent />
       </section>
     </div>
   );
