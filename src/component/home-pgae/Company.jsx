@@ -1,5 +1,6 @@
 import { CompanyCartsItems } from "../../datas";
 import icon from "../../images/icon-upward.svg";
+import { CompanyCards } from "./CompanyCards";
 
 export const Company = () => {
   return (
@@ -32,19 +33,7 @@ export const Company = () => {
           <img src={icon} alt="" />
         </button>
       </div>
-      <div className="carts">
-        {CompanyCartsItems.map(({ logoUrl, name }, i) => (
-          <div key={i} className="cart">
-            <img src={logoUrl} alt="" />
-            <p>{name}</p>
-            <div className="btn-add">
-              <div>
-                <img src="https://www.svgrepo.com/show/77168/plus.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <CompanyCards data={CompanyCartsItems} />
     </div>
   );
 };

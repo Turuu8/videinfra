@@ -719,51 +719,6 @@
         }
       }
 
-      .carts {
-        width: 500%;
-        display: flex;
-        overflow: scroll;
-        gap: 40px;
-        padding-bottom: 240px;
-
-        .cart {
-          position: relative;
-          width: 560px;
-          height: 480px;
-          background-color: $light;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          p {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            padding: 40px;
-          }
-
-          .btn-add {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            padding: 40px;
-
-            div {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border-radius: 50%;
-              width: 30px;
-              height: 30px;
-              background-color: $lm;
-            }
-
-            img {
-              height: 13px;
-            }
-          }
-        }
-      }
     }
   }
 
@@ -846,6 +801,49 @@
 
       span:nth-child(2) {
         color: $oc;
+      }
+    }
+  }
+}
+.home-page-company-carts {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 240px;
+
+  .cart {
+    position: relative;
+    width: 680px;
+    height: 583px;
+    background-color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 40px;
+    }
+
+    .btn-add {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 40px;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: $lm;
+      }
+
+      img {
+        height: 13px;
       }
     }
   }

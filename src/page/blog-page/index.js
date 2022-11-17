@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HeadlineChooseBtn,
   JumpHomePageText,
@@ -7,11 +8,14 @@ import {
 import { AllCardList, HeadlineChooseBtnLists } from "../../datas/blog-page";
 
 export const BlogPage = () => {
+  const [clicked, setClicked] = useState("")
+  console.log(AllCardList[0].allCardList.filter(p => p.type === clicked))
+  console.log(clicked)
   return (
     <div className="blog-page">
       <section className="headline-choose_btn-section">
         {HeadlineChooseBtnLists.map((el, i) => (
-          <HeadlineChooseBtn key={i} {...el} />
+          <HeadlineChooseBtn key={i} {...el} setClicked={setClicked} />
         ))}
       </section>
       <section className="list-cards">
