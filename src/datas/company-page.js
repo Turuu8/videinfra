@@ -92,3 +92,22 @@ export const CompanyPageClientTileItems = [
     url: "https://videinfra.com/assets/images/media/clients/tn.svg",
   },
 ];
+
+export const RecognitionCardItems = [
+  {
+    logoUrl: "https://videinfra.com/assets/images/media/awards/www.svg",
+    name: "Awwwards",
+  },
+  {
+    logoUrl: "https://videinfra.com/assets/images/media/awards/cssda.svg",
+    name: "CSS Design Awards",
+  },
+  {
+    logoUrl: "https://videinfra.com/assets/images/media/awards/fwa.svg",
+    name: "The FWA",
+  },
+  {
+    logoUrl: "https://videinfra.com/assets/images/media/awards/runeta.svg",
+    name: "Rating Runeta",
+  },
+]

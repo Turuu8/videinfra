@@ -777,46 +777,6 @@
   opacity: 0.4;
   transform: rotate(180deg);
 }
-.home-page .company-section .company-content .carts {
-  width: 500%;
-  display: flex;
-  overflow: scroll;
-  gap: 40px;
-  padding-bottom: 240px;
-}
-.home-page .company-section .company-content .carts .cart {
-  position: relative;
-  width: 560px;
-  height: 480px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-page .company-section .company-content .carts .cart p {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 40px;
-}
-.home-page .company-section .company-content .carts .cart .btn-add {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 40px;
-}
-.home-page .company-section .company-content .carts .cart .btn-add div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: #e8e8e8;
-}
-.home-page .company-section .company-content .carts .cart .btn-add img {
-  height: 13px;
-}
 .home-page .insights-section {
   width: 100%;
   background-color: #fff;
@@ -892,6 +852,45 @@
 }
 .insights-list .card-list .duration span:nth-child(2) {
   color: #191b1d;
+}
+
+.home-page-company-carts {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 240px;
+}
+.home-page-company-carts .cart {
+  position: relative;
+  width: 680px;
+  height: 583px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page-company-carts .cart p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+}
+.home-page-company-carts .cart .btn-add {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+}
+.home-page-company-carts .cart .btn-add div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #e8e8e8;
+}
+.home-page-company-carts .cart .btn-add img {
+  height: 13px;
 }
 
 .company-page {
@@ -1109,12 +1108,16 @@
   padding: 0 140px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
 }
-.company-page .recognition-section .award-lists div:nth-child(1) {
+.company-page .recognition-section .award-lists .list-container {
   width: 50%;
+  box-sizing: border-box;
+  padding-left: 20px;
 }
-.company-page .recognition-section .award-lists div:nth-child(1) .refresh-icon {
+.company-page .recognition-section .award-lists .list-container .refresh-icon {
+  margin-bottom: 50px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1123,8 +1126,46 @@
   align-items: center;
   justify-content: center;
 }
-.company-page .recognition-section .award-lists div:nth-child(1) .refresh-icon img {
+.company-page .recognition-section .award-lists h1 {
+  border-top: 2px solid #fff;
+  line-height: 100%;
+  padding: 50px 0;
+  font-size: 90px;
+  font-family: "Graphik LCG Medium";
+  letter-spacing: -0.06em;
+  color: rgba(255, 255, 255, 0.4);
+}
+.company-page .recognition-section .award-lists h1 span {
+  font-family: "Graphik LCG Medium";
+  letter-spacing: -0.06em;
+  color: #fff;
+}
+.company-page .recognition-section .btns {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 180px 140px 0;
+  display: flex;
+  gap: 8px;
+}
+.company-page .recognition-section .btns button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #424446;
+  border: none;
+  border-radius: 50%;
+}
+.company-page .recognition-section .btns button img {
   width: 60%;
+}
+.company-page .recognition-section .recognition-cards {
+  padding: 80px 0 0 22.6%;
+  overflow-x: auto;
 }
 
 .work-page {
