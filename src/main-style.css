@@ -66,35 +66,31 @@
   letter-spacing: -0.005em;
 }
 
+.home-page {
+  width: 100%;
+}
 .home-page .top-pointer-events-section {
+  background-color: #cdcecf;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 73.5vh;
+  z-index: 1;
+}
+.home-page .top-pointer-events-section .intro {
   box-sizing: border-box;
   max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-.home-page .top-pointer-events-section .background {
-  height: 100%;
-  width: 100%;
-  transition: all 0.2s;
-  background-color: #cdcecf;
-}
-.home-page .top-pointer-events-section .intro {
-  position: absolute;
-  background-color: #cdcecf;
   box-sizing: border-box;
   width: 100%;
   top: 0;
   display: flex;
-  padding: 105px 140px 60px;
-  height: 73.5vh;
+  padding: 128px 140px 80px;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  z-index: 5;
   transition: all 0.19s;
 }
 @media (max-width: 567px) {
@@ -111,7 +107,7 @@
   font-size: 60px;
   letter-spacing: -0.09em;
   line-height: 100px;
-  margin: -2% 0 0 0;
+  margin: -1% 0 0 0;
 }
 @media (max-width: 567px) {
   .home-page .top-pointer-events-section .intro .headline-word {
@@ -278,17 +274,15 @@
 .home-page .video-section {
   width: 100%;
   height: 100vh;
-  position: relative;
   transition: all 0.5s ease;
   transition-delay: 0.5s;
   overflow: hidden;
-  transform: translateY(-50%);
-  z-index: -1;
-  cursor: url("./images//icon-upward.svg");
+  transform: translateY(-40%);
+  z-index: 0;
 }
 .home-page .video-section .video-position {
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 @media (max-width: 567px) {
   .home-page .video-section .video-position {
@@ -306,7 +300,6 @@
   width: 100%;
   border-top: 1px solid rgba(25, 27, 29, 0.1019607843);
   background-color: #fff;
-  transform: translateY(-50%);
 }
 .home-page .expertise-section .container-expertise {
   box-sizing: border-box;
@@ -477,7 +470,6 @@
   color: rgba(25, 27, 29, 0.5019607843);
 }
 .home-page .our-apabilities-section {
-  transform: translateY(-50%);
   width: 100%;
   background-color: #191b1d;
 }
@@ -979,18 +971,160 @@
 .company-page .status-number-section .content-status-number .years-members {
   width: 100%;
   display: flex;
-  padding: 80px 0;
+  padding: 70px 0 200px;
   gap: 40px;
-  margin-bottom: 20px;
 }
 .company-page .status-number-section .content-status-number .years-members div {
-  width: 45%;
+  width: 47%;
 }
 .company-page .status-number-section .content-status-number .years-members div h1 {
+  color: #191b1d;
+  padding: 35px 0;
   border-bottom: 1px solid rgba(25, 27, 29, 0.1019607843);
   font-size: 90px;
   font-family: "Graphik LCG Medium";
   letter-spacing: -0.06em;
+}
+.company-page .status-number-section .content-status-number .years-members div p {
+  padding: 40px 0;
+  letter-spacing: -0.03em;
+}
+.company-page .director-people-section {
+  padding-left: 22.6%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  box-sizing: border-box;
+  gap: 40px;
+  overflow-x: scroll;
+}
+.company-page .director-people-section div:nth-child(1) {
+  max-width: 640px;
+  width: 100%;
+}
+.company-page .director-people-section div:nth-child(1) img {
+  width: 640px;
+  padding-bottom: 20px;
+}
+.company-page .director-people-section p {
+  font-size: 15.5px;
+  line-height: 110%;
+}
+.company-page .director-people-section p:nth-child(2) {
+  color: rgba(25, 27, 29, 0.5019607843);
+  padding-bottom: 320px;
+}
+.company-page .our-clients-section {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 320px;
+}
+.company-page .our-clients-section .content-client-tile {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 240px 140px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.company-page .our-clients-section .content-client-tile .company-page-client-image {
+  width: 350px;
+  border: 1px solid rgba(25, 27, 29, 0.1019607843);
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-page .our-clients-section .row-pad-reviews {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.company-page .our-clients-section .row-pad-reviews .container {
+  display: flex;
+  gap: 5px;
+}
+.company-page .our-clients-section .row-pad-reviews .container div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #191b1d;
+  margin-right: 10px;
+}
+.company-page .our-clients-section .row-pad-reviews .container button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-page .our-clients-section .row-pad-reviews .container img {
+  width: 70%;
+}
+.company-page .our-clients-section .row-pad-reviews .review-text {
+  width: 50%;
+  margin-right: -20px;
+  font-size: 20.5px;
+}
+.company-page .our-clients-section .row-pad-reviews .review-text .avatar {
+  display: flex;
+  padding-top: 70px;
+}
+.company-page .our-clients-section .row-pad-reviews .review-text .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.company-page .our-clients-section .row-pad-reviews .review-text .avatar div {
+  margin-left: 40px;
+  font-size: 16px;
+}
+.company-page .our-clients-section .row-pad-reviews .review-text .avatar div h4:nth-child(2) {
+  color: rgba(25, 27, 29, 0.5019607843);
+}
+.company-page .recognition-section {
+  width: 100%;
+  background-color: #191b1d;
+}
+.company-page .recognition-section .content-recognition {
+  padding: 8px 0;
+}
+.company-page .recognition-section .award-lists {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 140px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.company-page .recognition-section .award-lists div:nth-child(1) {
+  width: 50%;
+}
+.company-page .recognition-section .award-lists div:nth-child(1) .refresh-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #424446;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-page .recognition-section .award-lists div:nth-child(1) .refresh-icon img {
+  width: 60%;
 }
 
 .work-page {
@@ -1317,6 +1451,7 @@
   color: #fff;
 }
 .discription-section .content-discription div span {
+  color: #191b1d;
   margin-top: -5px;
   box-sizing: border-box;
   font-size: 22px;

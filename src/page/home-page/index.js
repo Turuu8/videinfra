@@ -12,7 +12,6 @@ export const HomePage = () => {
   return (
     <div className="home-page">
       <section className="top-pointer-events-section">
-        <div className="background" />
         <div className="intro">
           <Intro />
         </div>
