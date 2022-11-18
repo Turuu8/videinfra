@@ -26,8 +26,22 @@ body {
     position: fixed ;
     z-index: 10;
     width: 100%;    
-    border-bottom: 1px solid $bc;
-    padding: 14.5px 0;
+    .full{
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        position: relative;
+        z-index: -1;
+    }
+    .full::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: $bc;
+        bottom: 0;
+        z-index: 2;
+    }
     .header-content { 
         @include maxWidth;
         height: 30px;
@@ -54,6 +68,7 @@ body {
             padding: 8.5px 30px;
         }
         .logo { 
+            z-index: 2;
             @include logo;
             @include media ('<=phone&tablet') {
                 padding: 0;
@@ -62,11 +77,59 @@ body {
                 padding-left: 18px;
             }
         }
+        .type-names{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.444);
+            opacity: 0;
+            height: 100vh;
+            position: absolute;
+            left: 0;    
+            top: 0;
+            pointer-events: none;
+            z-index: -1;
+            transition: 2s;
+        }
+        .white-full{
+            position: absolute;
+            top: -100vh;
+            left: 0;
+            transition: 1s;
+            background-color: $light;
+            height: 560px;
+            width: 100%;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            div{
+                width: 27%;
+                display: flex;
+                flex-direction: column;       
+                align-items: flex-start; 
+                justify-content: center;
+                a{
+                    text-decoration: none;
+                    font-family: "Graphik LCG Medium";
+                    font-size: 38px;
+                    letter-spacing: -0.05em;
+                    color: $oc;
+                }
+            }
+        }
+        .link-btn:hover .white-full{
+            top: 0;
+            // visibility: visible;
+        }
+        .link-btn:hover .type-names{
+            opacity: 1;
+        }
         .link-btn { 
             width: 17%;
             font-weight: 100;
             display: flex;
             align-items: center;
+            z-index: 1;
             @include media ('<=phone&tablet') {
                 display: none;
             }
@@ -127,6 +190,7 @@ body {
         .list{
             width: 44.5%;
             display: flex;
+            z-index: 2;
             @include media ('<=phone') {
                 display: none;
             }
@@ -161,14 +225,14 @@ body {
                         left: 0;
                         opacity: .5;
                         transform: translate3d( 0 , 150%, 0);
-                        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                        transition: transform .4s cubic-bezier(0.76, 0, 0.24, 1);
                     }
                     :hover::after{
                         transform: translate3d(0, 0, 0);
                     }
                     a span {
                         display : inline-block;
-                        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                        transition: transform .4s cubic-bezier(0.76, 0, 0.24, 1);
                         letter-spacing: -0.01em;
                     }
                     a:hover span { 
@@ -193,7 +257,7 @@ body {
             transform: translate3d(0, 0, 0);
         }
     }
-}
+    }
 .footer{
     border-top: 1px solid $bc;
     margin-top: -1px;
@@ -268,4 +332,11 @@ body {
             }
         }
     }
+}
+
+
+.demo {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
 }

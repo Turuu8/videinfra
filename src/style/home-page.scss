@@ -806,6 +806,7 @@
   }
 }
 .home-page-company-carts {
+  width: 500%;
   display: flex;
   gap: 40px;
   padding-bottom: 240px;
@@ -823,14 +824,22 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      padding: 40px;
+      padding: 40px 0  45px 60px;
     }
-
+    .number{
+      position: absolute;
+      padding: 40px 0 0 60px;
+      font-size: 38px;
+      font-family: "Graphik LCG Medium";
+      top: 0;
+      left: 0;
+      color: $light;
+    }
     .btn-add {
       position: absolute;
       right: 0;
       bottom: 0;
-      padding: 40px;
+      padding: 40px 60px 45px ;
 
       div {
         display: flex;

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Demo } from "./component/Demo";
 import { Layout } from "./Layout";
 import {
   BlogPage,
@@ -20,6 +21,7 @@ export const RoutesComponent = () => {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/career" element={<CareerPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/demo" element={<Demo />} />
           <Route />
         </Route>
       </Routes>

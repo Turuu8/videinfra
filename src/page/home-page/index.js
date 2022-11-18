@@ -1,3 +1,5 @@
+import gsap from "gsap";
+import { ScrollTrigger, Tween } from "react-gsap";
 import {
   Expertise,
   Intro,
@@ -7,15 +9,45 @@ import {
   Insights,
 } from "../../component";
 import { ExpertiseItems } from "../../datas";
+// gsap.registerPlugin(ScrollTrigger);
 
 export const HomePage = () => {
   return (
     <div className="home-page">
-      <section className="top-pointer-events-section">
-        <div className="intro">
-          <Intro />
-        </div>
-      </section>
+      <Tween
+        to={{
+          y: "-70vh",
+          scrollTrigger: {
+            trigger: ".top-pointer-events-section",
+            start: "0 0",
+            end: "50% 0",
+            scrub: 0.7,
+            markers: true,
+          },
+        }}
+      >
+        <section className="top-pointer-events-section">
+          <Tween
+            from={{
+              y: "0",
+            }}
+            to={{
+              y: "-20vh",
+              scrollTrigger: {
+                trigger: ".intro",
+                start: "0 0",
+                end: "50% 0",
+                scrub: 0.5,
+                markers: true,
+              },
+            }}
+          >
+            <div className="intro">
+              <Intro />
+            </div>
+          </Tween>
+        </section>
+      </Tween>
       <section className="video-section">
         <Video />
       </section>
