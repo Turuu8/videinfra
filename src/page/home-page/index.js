@@ -15,13 +15,17 @@ export const HomePage = () => {
   return (
     <div className="home-page">
       <Tween
+        from={{
+          y: "0",
+        }}
         to={{
-          y: "-70vh",
+          y: "-50vh",
           scrollTrigger: {
             trigger: ".top-pointer-events-section",
             start: "0 0",
-            end: "50% 0",
-            scrub: 0.7,
+            // pin: ".top-pointer-events-section",
+            end: "120% 0",
+            scrub: 1.5,
             markers: true,
           },
         }}
@@ -32,12 +36,13 @@ export const HomePage = () => {
               y: "0",
             }}
             to={{
-              y: "-20vh",
+              y: "-45vh",
               scrollTrigger: {
                 trigger: ".intro",
                 start: "0 0",
+                // pin: ".top-pointer-events-section",
                 end: "50% 0",
-                scrub: 0.5,
+                scrub: 1,
                 markers: true,
               },
             }}
