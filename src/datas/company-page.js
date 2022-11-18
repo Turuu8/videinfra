@@ -95,19 +95,23 @@ export const CompanyPageClientTileItems = [
 
 export const RecognitionCardItems = [
   {
+    number: "22",
     logoUrl: "https://videinfra.com/assets/images/media/awards/www.svg",
     name: "Awwwards",
   },
   {
+    number: "22",
     logoUrl: "https://videinfra.com/assets/images/media/awards/cssda.svg",
     name: "CSS Design Awards",
   },
   {
+    number: "3",
     logoUrl: "https://videinfra.com/assets/images/media/awards/fwa.svg",
     name: "The FWA",
   },
   {
+    number: "14",
     logoUrl: "https://videinfra.com/assets/images/media/awards/runeta.svg",
     name: "Rating Runeta",
   },
-]
+];

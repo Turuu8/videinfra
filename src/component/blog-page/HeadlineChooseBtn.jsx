@@ -2,7 +2,8 @@ import React from "react";
 
 export const HeadlineChooseBtn = (props) => {
   const Handle = (e) => {
-    props.setClicked(e.target.value);
+    console.log(e.target.backgroundColor);
+    // props.setClicked(e.target.value);
   };
   return (
     <div>

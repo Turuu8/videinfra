@@ -855,6 +855,7 @@
 }
 
 .home-page-company-carts {
+  width: 500%;
   display: flex;
   gap: 40px;
   padding-bottom: 240px;
@@ -872,13 +873,22 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 40px;
+  padding: 40px 0 45px 60px;
+}
+.home-page-company-carts .cart .number {
+  position: absolute;
+  padding: 40px 0 0 60px;
+  font-size: 38px;
+  font-family: "Graphik LCG Medium";
+  top: 0;
+  left: 0;
+  color: #fff;
 }
 .home-page-company-carts .cart .btn-add {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 40px;
+  padding: 40px 60px 45px;
 }
 .home-page-company-carts .cart .btn-add div {
   display: flex;
@@ -1164,7 +1174,7 @@
   width: 60%;
 }
 .company-page .recognition-section .recognition-cards {
-  padding: 80px 0 0 22.6%;
+  padding: 80px 0 120px 22.6%;
   overflow-x: auto;
 }
 
@@ -1678,8 +1688,22 @@ body {
   position: fixed;
   z-index: 10;
   width: 100%;
-  border-bottom: 1px solid rgba(25, 27, 29, 0.1019607843);
-  padding: 14.5px 0;
+}
+.navigation .full {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  position: relative;
+  z-index: -1;
+}
+.navigation .full::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(25, 27, 29, 0.1019607843);
+  bottom: 0;
+  z-index: 2;
 }
 .navigation .header-content {
   box-sizing: border-box;
@@ -1716,6 +1740,7 @@ body {
   }
 }
 .navigation .header-content .logo {
+  z-index: 2;
   width: 180px;
   font-weight: 600;
 }
@@ -1733,11 +1758,58 @@ body {
     padding-left: 18px;
   }
 }
+.navigation .header-content .type-names {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.444);
+  opacity: 0;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: 2s;
+}
+.navigation .header-content .white-full {
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  transition: 1s;
+  background-color: #fff;
+  height: 560px;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .header-content .white-full div {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.navigation .header-content .white-full div a {
+  text-decoration: none;
+  font-family: "Graphik LCG Medium";
+  font-size: 38px;
+  letter-spacing: -0.05em;
+  color: #191b1d;
+}
+.navigation .header-content .link-btn:hover .white-full {
+  top: 0;
+}
+.navigation .header-content .link-btn:hover .type-names {
+  opacity: 1;
+}
 .navigation .header-content .link-btn {
   width: 17%;
   font-weight: 100;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 @media (max-width: 567px) {
   .navigation .header-content .link-btn {
@@ -1802,6 +1874,7 @@ body {
 .navigation .header-content .list {
   width: 44.5%;
   display: flex;
+  z-index: 2;
 }
 @media (max-width: 400px) {
   .navigation .header-content .list {
@@ -1845,14 +1918,14 @@ body {
   left: 0;
   opacity: 0.5;
   transform: translate3d(0, 150%, 0);
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
 }
 .navigation .header-content .list ul li :hover::after {
   transform: translate3d(0, 0, 0);
 }
 .navigation .header-content .list ul li a span {
   display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
   letter-spacing: -0.01em;
 }
 .navigation .header-content .list ul li a:hover span {
@@ -1955,6 +2028,12 @@ body {
   justify-content: space-between;
   color: rgba(25, 27, 29, 0.5019607843);
   font-size: 14px;
+}
+
+.demo {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=main-style.css.map */

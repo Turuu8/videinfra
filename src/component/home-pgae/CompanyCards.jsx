@@ -3,7 +3,7 @@ export const CompanyCards = (props) => {
   console.log(href);
   return (
     <div className="home-page-company-carts">
-      {props.data.map(({ logoUrl, name }, i) => (
+      {props.data.map(({ logoUrl, name, number }, i) => (
         <div
           key={i}
           className="cart"
@@ -11,8 +11,11 @@ export const CompanyCards = (props) => {
         >
           <img src={logoUrl} alt="" />
           <p>{name}</p>
+          <h3 className="number">{number}</h3>
           <div className="btn-add">
-            <div>
+            <div
+              style={href === "company" ? { backgroundColor: "#bcbebf" } : {}}
+            >
               <img src="https://www.svgrepo.com/show/77168/plus.svg" alt="" />
             </div>
           </div>
