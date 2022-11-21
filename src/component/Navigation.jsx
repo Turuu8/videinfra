@@ -1,14 +1,25 @@
+import { useState } from "react";
 import { NavigationLists } from "../datas";
 import icon from "../images/icon-upward.svg";
 import menu from "../images/two-line-menu.svg";
 
 export const Navigation = () => {
   let href = window.location.href.split("//")[1].split("/")[1];
+  const [title, setTitle] = useState("Expertise");
+  const handClick = (e) => {
+    console.log(e.target);
+  };
   return (
     <div
       style={{
         backgroundColor:
-          href === "blog" ? "#fff" : href === "work" ? "#fff" : "#cdcecf",
+          href === "blog"
+            ? "#fff"
+            : href === "work"
+            ? "#fff"
+            : href === "expertise"
+            ? "#fff"
+            : "#cdcecf",
       }}
       className="navigation"
     >
@@ -23,19 +34,45 @@ export const Navigation = () => {
             <div className="type-names"></div>
             <div className="white-full">
               <div>
-                <a href="/work">Digital Products & Services</a>
-                <a href="/work">eCommerce</a>
-                <a href="/work">Corporate Websites</a>
-                <a href="/work">Brand & Communication</a>
+                <a
+                  href="/expertise/digital-products-and-services"
+                  value="Digital Products & Services"
+                  onClick={(e) => handClick(e)}
+                >
+                  Digital Products & Services
+                </a>
+                <a
+                  href="/expertise/ecommerce"
+                  value="eCommerce"
+                  onClick={(e) => handClick(e)}
+                >
+                  eCommerce
+                </a>
+                <a
+                  href="/expertise/corporate-websites"
+                  value="Corporate Websites"
+                  onClick={(e) => handClick(e)}
+                >
+                  Corporate Websites
+                </a>
+                <a
+                  href="/expertise/brand-and-communication"
+                  value="Brand & Communication"
+                  onClick={(e) => handClick(e)}
+                >
+                  Brand & Communication
+                </a>
               </div>
             </div>
-            <span>Expertise</span>
+            <span>{title}</span>
             <div
               style={{
                 backgroundColor:
                   href === "blog"
                     ? "#eaebeb"
                     : href === "work"
+                    ? "#eaebeb"
+                    : href === "expertise"
                     ? "#eaebeb"
                     : "#bbbcbd",
               }}

@@ -4,3 +4,7 @@ export * from "./company-page/index";
 export * from "./blog-page/index";
 export * from "./career-page/index";
 export * from "./contact-page/index";
+export * from "./expertise-pages/BrandCommunication";
+export * from "./expertise-pages/CorporateWebsites";
+export * from "./expertise-pages/DigitalProductsServices";
+export * from "./expertise-pages/eCommerce-page";
