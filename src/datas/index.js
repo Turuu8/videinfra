@@ -143,3 +143,16 @@ export const ContactPageList = [
     height: "21%",
   },
 ];
+
+export const ExpertiseDigitalProductDesignItems = [
+  { title: "Digital Products & Services", Size: "90px", pad: "-.065em" },
+];
+export const ExpertiseECommerceItems = [
+  { title: "eCommerce", Size: "90px", pad: "-.065em" },
+];
+export const ExpertiseCorporateWebsitesItems = [
+  { title: "Corporate Websites", Size: "90px", pad: "-.065em" },
+];
+export const ExpertiseBrandCommunicationItems = [
+  { title: "Brand & Communication Design", Size: "90px", pad: "-.065em" },
+];

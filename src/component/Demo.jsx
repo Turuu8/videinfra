@@ -1,24 +1,73 @@
-import React, { useEffect, useImperativeHandle, useRef, useState } from "react";
-import { Tween } from "react-gsap";
+import React, { useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
+import { Test } from "./Test";
+import useLocoScroll from "./useLocoScroll";
+import { Test1 } from "./Test1";
+import { Test2 } from "./Test2";
+import { Test3 } from "./Test3";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Demo = () => {
-  const triggerRef = useRef(null);
-  //   const [trigger, setTrigger] = useState(triggerRef.current);
-  //   useEffect(() => {
-  //     setTrigger(triggerRef.current);
-  //   }, []);
-  const trigger = useRef(null);
-  //   useImperativeHandle(ref, () => ({
-  //     trigger,
-  //   }));
+  const [preloeader, setPreleader] = useState(true);
+
+  useLocoScroll(!preloeader);
+
+  const [time, setTime] = useState(2);
+  const id = useRef(null);
+
+  const clear = () => {
+    window.clearInterval(id.current);
+    setPreleader(false);
+  };
+  useEffect(() => {
+    id.current = window.setInterval(() => {
+      setTime((timer) => timer - 1);
+    }, 1000);
+  }, []);
+
+  useEffect(() => {
+    if (time === 0) {
+      clear();
+    }
+  }, [time]);
 
   return (
     <>
-      <div className="demo"></div>
-      <div className="demo">
+      <div
+        style={
+          !preloeader
+            ? { backgroundColor: "#000", color: "#fff" }
+            : { backgroundColor: "#fff", color: "#000", height: "100vh" }
+        }
+        className="demo"
+      >
+        {!preloeader ? (
+          <div
+            style={{
+              width: "100%",
+            }}
+            className="main-container"
+            data-scroll-container
+          >
+            <Test />
+            <Test1 />
+            <Test2 />
+            <Test3 />
+          </div>
+        ) : (
+          <h1
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            world
+          </h1>
+        )}
+      </div>
+      {/* <div className="demo">
         <Tween
           from={
             {
@@ -40,9 +89,9 @@ export const Demo = () => {
             className="square"
             style={{ width: "100px", height: "100px", background: "#ccc" }}
           />
-        </Tween>
-        {/* <ScrollTrigger trigger=".square"></ScrollTrigger> */}
-        {/* <ScrollTrigger
+        </Tween> */}
+      {/* <ScrollTrigger trigger=".square"></ScrollTrigger> */}
+      {/* <ScrollTrigger
            start="-200px center"
            end="200px center"
         scrub={0.5}
@@ -67,7 +116,7 @@ export const Demo = () => {
           />
         </Tween>
       </ScrollTrigger> */}
-      </div>
+      {/* </div> */}
     </>
   );
 };
