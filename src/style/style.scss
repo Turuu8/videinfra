@@ -117,13 +117,45 @@ body {
                     font-family: "Graphik LCG Medium";
                     font-size: 38px;
                     letter-spacing: -0.05em;
+                    transition: .2s;
                     color: $oc;
+                }
+                a:hover{
+                    opacity: .5;
+                }
+            }
+            .img{
+                position: absolute;
+                right: 0;
+                top: 0px;
+                background-repeat: no-repeat;
+                background-size: 400px;
+                background-position: bottom right;
+                animation: changeImg 15s linear infinite;
+            }
+            @keyframes changeImg {
+                0%{
+                    background-image: url(https://videinfra.com/assets/images/media/menu/menu-digital-3@xxxl.webp);
+                }
+                20%{
+                    background-image: url(https://videinfra.com/assets/images/media/menu/menu-digital-1@xxxl.webp);
+                }
+                40%{
+                    background-image: url(https://videinfra.com/assets/images/media/menu/menu-digital-2@xxxl.webp);
+                }
+                60%{
+                    background-image: url(https://videinfra.com/assets/images/media/menu/menu-ecommerce-1@xxxl.webp);
+                }
+                80%{
+                    background-image: url(https://videinfra.com/assets/images/media/menu/menu-ecommerce-2@xxxl.webp);
+                }
+                100%{
+                    background-image: url(https://videinfra.com/assets/images/media/menu/menu-ecommerce-3@xxxl.webp);
                 }
             }
         }
         .link-btn:hover .white-full{
             top: 0;
-            // visibility: visible;
         }
         .link-btn:hover .type-names{
             opacity: 1;
@@ -134,6 +166,9 @@ body {
             display: flex;
             align-items: center;
             z-index: 1;
+            span {
+               letter-spacing: -0.03em;
+            }
             @include media ('<=phone&tablet') {
                 display: none;
             }
@@ -215,7 +250,6 @@ body {
                     @include media ('<=tablet') {
                         margin:  0 9.5px;
                     }
-                    // padding: 2.4%;
                     a{
                         text-decoration: none;
                         color: black;

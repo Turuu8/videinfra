@@ -97,44 +97,6 @@
                     justify-content: center;
                }
           }
-          .row-pad-reviews{
-               @include maxWidth;  
-               padding: 0 140px;
-               display: flex;
-               justify-content: space-between;
-               .container{
-                    display: flex;
-                    div{
-                         width: 30px;
-                         height: 30px;
-                         border-radius: 50%;
-                         background-color: $oc;
-                         margin-right: 10px;
-                    }
-               }
-               .review-text{
-                    width: 50%;
-                    margin-right: -20px;
-                    // padding: 0 120px 0 20px;
-                    font-size: 20.5px;
-                    .avatar{
-                         display: flex;
-                         padding-top: 70px;
-                         img {
-                              width: 40px;
-                              height: 40px;
-                              border-radius: 50%;
-                         }
-                         div {
-                              margin-left: 40px;
-                              font-size: 16px;
-                              h4:nth-child(2){
-                                   color: $bsSmi;
-                              }
-                         }
-                    }
-               }
-          }
      }
      .recognition-section {
           width: 100%;
@@ -198,13 +160,13 @@
                     }
                }
           }
-          .recognition-cards{
-               padding: 80px 0 120px 22.6%;
-               overflow-x: auto;
-          }
      }
 }
 
+.recognition-cards{
+     padding: 80px 0 120px 22.6%;
+     overflow-x: auto;
+}
 
 .arrow-buttons {
      border: none;
@@ -217,5 +179,61 @@
      justify-content: center;
      img{
           width: 70%;
+     }
+}
+.arrow-buttonsTwo {
+     background-color: #424446;
+     border: none;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     img{
+          width: 70%;
+     }
+}
+.compnay-page-row-pad-reviews{
+     @include maxWidth;  
+     padding: 0 140px;
+     display: flex;
+     justify-content: space-between;
+     .container{
+          display: flex;
+          div{
+               width: 30px;
+               height: 30px;
+               border-radius: 50%;
+               background-color: $oc;
+               margin-right: 10px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               img{ 
+                    width: 70%;
+               }
+          }
+     }
+     .review-text{
+          width: 50%;
+          margin-right: -20px;
+          font-size: 20.5px;
+          .avatar{
+               display: flex;
+               padding-top: 70px;
+               img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+               }
+               div {
+                    margin-left: 40px;
+                    font-size: 16px;
+                    h4:nth-child(2){
+                         color: $bsSmi;
+                    }
+               }
+          }
      }
 }

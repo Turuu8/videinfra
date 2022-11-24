@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import { Test } from "./Test";
-import useLocoScroll from "./useLocoScroll";
 import { Test1 } from "./Test1";
 import { Test2 } from "./Test2";
 import { Test3 } from "./Test3";
+import useLocoScroll from "./useLocoScroll";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Demo = () => {

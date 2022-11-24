@@ -3,3 +3,57 @@
      background-color: $light;
      @include headline;
 }
+.results-section{
+     width: 100%;
+     background-color: $oc;
+     .container-result{
+          @include maxWidth;
+          color: $light;
+          .discription-section{
+               padding-top: 8px;
+          }
+          .content-discription{
+               padding-bottom: 80px;
+          }
+          .review{
+               margin: 0 140px 80px; 
+               border-bottom: 1px solid #313334;
+          }
+     }
+     .compnay-page-row-pad-reviews{
+          color: $light;
+          .arrow-buttons {
+               background-color: #424446;
+          }
+          .container{
+               div{
+                    background-color: $light;
+               }
+          }
+          .review-text {
+               .avatar{
+                    div{
+                         h4:nth-child(2){
+                              color: #ffffff66;
+                         }
+                    }
+               }
+          }
+     }
+}
+.company-logos{
+     width: 100%;
+     padding: 252px 0 280px;
+     display: flex;
+     overflow-x: auto;
+     gap: 40px;
+     div {
+          width: 343px;
+          min-width: 343px;
+          height: 343px;
+          display: flex; 
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $ourB;
+     }
+}

@@ -1,7 +1,7 @@
 export const Discription = (props) => {
   return (
     <div
-      style={props.headTop === "" ? { padding: "25px 0 240px" } : {}}
+      style={props.detail === "" ? { padding: "80px 140px 80px" } : {}}
       className="content-discription"
     >
       <div>
@@ -28,6 +28,14 @@ export const Discription = (props) => {
           }
         >
           {props.detail}
+          {/* {props.detail === "" ? (
+            props.detail
+          ) : (
+            <div className="addition-text">
+              <p>{props.textTop}</p>
+              <p>{props.textBottom}</p>
+            </div>
+          )} */}
         </span>
       </div>
     </div>

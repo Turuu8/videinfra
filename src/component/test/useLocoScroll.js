@@ -10,8 +10,8 @@ export default function useLocoScroll(start) {
       el: scrollEl,
       smooth: true,
       multiplier: 1,
-      class: "is-view",
+      // class: "is-view",
     });
-    console.log("time");
+    console.log(locoScroll);
   }, [start]);
 }

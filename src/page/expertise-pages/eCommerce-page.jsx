@@ -1,11 +1,23 @@
-import { Accordion, CaseStudies, Discription, Headline } from "../../component";
+import {
+  Accordion,
+  CaseStudies,
+  Discription,
+  Headline,
+  Insights,
+  JumpHomePageText,
+  Results,
+  TechnologiesCards,
+} from "../../component";
 import {
   ECommerceCaseStudiesItems,
+  ECommerceResultItems,
   ExpertiseECommerceAccordion,
   ExpertiseECommerceAccordionTwo,
   ExpertiseECommerceDiscriptionItems,
   ExpertiseECommerceDiscriptionItemsTwo,
   ExpertiseECommerceItems,
+  ExpertiseECommerceTechnologiesItems,
+  PersonIntroductionDigitalItem,
 } from "../../datas";
 
 export const ECommercePage = () => {
@@ -40,12 +52,27 @@ export const ECommercePage = () => {
           <Accordion {...el} key={i} props={"white"} />
         ))}
       </section>
+      <section className="discription-section">
+        {ExpertiseECommerceTechnologiesItems.map((el, i) => (
+          <Discription key={i} {...el} />
+        ))}
+      </section>
+      <section className="technologies-cards-section">
+        <TechnologiesCards />
+      </section>
       <section className="case-studies-section">
         <CaseStudies json={ECommerceCaseStudiesItems} />
       </section>
-      <div>eCommercePage</div>
-      <div>eCommercePage</div>
-      <div>eCommercePage</div>
+      <section className="results-section">
+        <Results
+          data={PersonIntroductionDigitalItem}
+          first={ECommerceResultItems}
+        />
+      </section>
+      <section className="insights-section">
+        <Insights />
+      </section>
+      <JumpHomePageText props={"Expertise  / eCommerce"} />
     </div>
   );
 };

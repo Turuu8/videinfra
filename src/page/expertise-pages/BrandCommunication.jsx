@@ -1,5 +1,12 @@
 import React from "react";
-import { Accordion, CaseStudies, Discription, Headline } from "../../component";
+import {
+  Accordion,
+  CaseStudies,
+  Discription,
+  Headline,
+  Insights,
+  JumpHomePageText,
+} from "../../component";
 import {
   BrandDesignCaseStudiesItems,
   ExpertiseBrandCommunicationAccordion,
@@ -40,9 +47,10 @@ export const BrandCommunication = () => {
       <section className="case-studies-section">
         <CaseStudies json={BrandDesignCaseStudiesItems} />
       </section>
-      <h1>BrandCommunication</h1>
-      <h1>BrandCommunication</h1>
-      <h1>BrandCommunication</h1>
+      <section className="insights-section">
+        <Insights />
+      </section>
+      <JumpHomePageText props={"Expertise  / Brand & Communication Design"} />
     </div>
   );
 };

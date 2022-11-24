@@ -96,4 +96,35 @@
             }
         }
     }
+    .discription {
+        @include maxWidth;
+        padding : 72px 140px 240px;
+        div{
+            display: flex;
+            justify-content: space-between;
+            h5 { 
+                font-size: 16px;
+                letter-spacing: -.03em;
+            }
+            span {
+                color: $light;
+                font-family: "Graphik LCG Medium";
+                margin-top: -5px;
+                box-sizing: border-box;
+                font-size: 180px;
+                padding: 0 20px;
+                width: 50%;
+                letter-spacing: -.06em;
+                line-height: 90%;
+            }
+            .addition-text {
+                font-size: 16px;
+                letter-spacing: -.01em;
+                display: flex;
+                flex-direction: column;
+                padding-top: 60px;
+                line-height: 100%;
+            }
+        }
+    }
   }

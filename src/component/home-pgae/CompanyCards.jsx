@@ -1,22 +1,39 @@
+import plus from "../../images/plus.black.svg";
+
 export const CompanyCards = (props) => {
   let href = window.location.href.split("//")[1].split("/")[1];
-  console.log(href);
   return (
     <div className="home-page-company-carts">
-      {props.data.map(({ logoUrl, name, number }, i) => (
+      {props.data.map(({ logoUrl, name, number, textOne, textTwo }, i) => (
         <div
           key={i}
           className="cart"
-          style={href === "company" ? { backgroundColor: "#cdcecf" } : {}}
+          style={
+            href === "company"
+              ? { backgroundColor: "#cdcecf" }
+              : href === "expertise"
+              ? { backgroundColor: "#eaebeb" }
+              : {}
+          }
         >
           <img src={logoUrl} alt="" />
           <p>{name}</p>
+          <span className="text">
+            <span>{textOne}</span>
+            <span>{textTwo}</span>
+          </span>
           <h3 className="number">{number}</h3>
           <div className="btn-add">
             <div
-              style={href === "company" ? { backgroundColor: "#bcbebf" } : {}}
+              style={
+                href === "company"
+                  ? { backgroundColor: "#bcbebf" }
+                  : href === "expertise"
+                  ? { backgroundColor: "#fff" }
+                  : {}
+              }
             >
-              <img src="https://www.svgrepo.com/show/77168/plus.svg" alt="" />
+              <img src={plus} alt="" />
             </div>
           </div>
         </div>

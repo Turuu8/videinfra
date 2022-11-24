@@ -18,6 +18,7 @@ export * from "./company-page/ClientTile";
 export * from "./company-page/OurClientContent";
 export * from "./company-page/RecognitionContent";
 export * from "./company-page/ArrowRL";
+export * from "./company-page/Personintroduction";
 // company page export
 
 // work page export
@@ -45,6 +46,8 @@ export * from "./contact-page/WriteEmail";
 // expertise page export
 export * from "./expertise/Accordion";
 export * from "./expertise/CaseStudies";
+export * from "./expertise/Results";
+export * from "./expertise/TechnologiesCards";
 // expertise page export
 
 export * from "./Footer";

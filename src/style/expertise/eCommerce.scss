@@ -2,4 +2,20 @@
      width: 100%;
      background-color: $light;
      @include headline;
+     .technologies-cards-section{
+          padding-top: 160px;
+          width: 100%;
+          background-color: $light;
+          .arrow-r-l{
+               display: flex;
+               @include maxWidth;
+               padding: 0 140px 53px;
+          }
+          .container-cards{
+               width: 100%;
+               @include maxWidth;
+               padding: 0 140px;
+               overflow-x: auto;
+          }
+     }
 }
