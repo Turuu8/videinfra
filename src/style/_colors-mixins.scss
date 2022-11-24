@@ -16,10 +16,13 @@ $bigCircle: #45494a;
 
 @mixin logo {
      width: 180px;
-     font-weight: 600;
      a{
           text-decoration: none;
           color: $oc;
+          span {
+               letter-spacing: -0.03em;
+               font-family: "Graphik LCG Medium";
+          }
      }
 }
 @mixin maxWidth {

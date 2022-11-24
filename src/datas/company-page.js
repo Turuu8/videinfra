@@ -115,3 +115,13 @@ export const RecognitionCardItems = [
     name: "Rating Runeta",
   },
 ];
+
+export const PersonIntroductionItem = [
+  {
+    name: "John Taman",
+    propUrl:
+      "https://videinfra.com/assets/images/media/testimonials/dnb-john-taman@xs.webp",
+    profession: "CTO, DnB Nord Group",
+    word: "Working with Vide Infra was a true pleasure. With the help of Anton and his team of professionals we managed to go live with the first version of our intranet pages within weeks. Vide Infra understood exactly what we wanted and helped us make the right decisions regarding set-up, layout and structure. Our success was largely dependent on their involvement and commitment.",
+  },
+];

@@ -1,11 +1,21 @@
 import React from "react";
-import { Accordion, CaseStudies, Discription, Headline } from "../../component";
+import {
+  Accordion,
+  CaseStudies,
+  Discription,
+  Headline,
+  Insights,
+  JumpHomePageText,
+  Results,
+} from "../../component";
 import {
   CorporateWebsitesCaseStudiesItems,
+  DigitalResultItems,
   ExpertiseCorporateAccordionTwo,
   ExpertiseCorporateWebsitesDiscriptionItems,
   ExpertiseCorporateWebsitesDiscriptionItemsTwo,
   ExpertiseCorporateWebsitesItems,
+  PersonIntroductionDigitalItem,
 } from "../../datas";
 
 export const CorporateWebsites = () => {
@@ -38,9 +48,16 @@ export const CorporateWebsites = () => {
       <section className="case-studies-section">
         <CaseStudies json={CorporateWebsitesCaseStudiesItems} />
       </section>
-      <h1>CorporateWebsites</h1>
-      <h1>CorporateWebsites</h1>
-      <h1>CorporateWebsites</h1>
+      <section className="results-section">
+        <Results
+          data={PersonIntroductionDigitalItem}
+          first={DigitalResultItems}
+        />
+      </section>
+      <section className="insights-section">
+        <Insights />
+      </section>
+      <JumpHomePageText props={"Expertise  / Corporate Websites"} />
     </div>
   );
 };

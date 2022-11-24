@@ -64,6 +64,12 @@ export const Navigation = () => {
                   Brand & Communication
                 </a>
               </div>
+              <div className="img">
+                {/* <img
+                  src="https://videinfra.com/assets/images/media/menu/menu-digital-3@xxxl.webp"
+                  alt=""
+                /> */}
+              </div>
             </div>
             <span>{title}</span>
             <div

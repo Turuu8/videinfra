@@ -22,8 +22,8 @@ export const JumpHomePageText = (props) => {
         href="/"
       >
         Homepage
-      </a>{" "}
-      &nbsp;/&nbsp; {props.props}
+      </a>
+      &nbsp;/ {props.props}
     </div>
   );
 };

@@ -298,6 +298,12 @@ export const ExpertiseBrandCommunicationAccordionTwo = [
     ],
   },
 ];
+
+export const ExpertiseECommerceTechnologiesItems = [
+  {
+    headTop: "Technologies",
+  },
+];
 // ------------------ CASE STUDIES ----------------------
 export const DigitalCaseStudiesItems = [
   {
@@ -536,4 +542,97 @@ export const ECommerceCaseStudiesItems = [
   },
 ];
 // ------------------ CASE STUDIES ----------------------
+
+// '''''''''''''''''''''' CARD ITEMS '''''''''''''''''''''''''
+export const ExpertiseCardItems = [
+  {
+    logoUrl:
+      "https://videinfra.com/assets/images/media/technologies/sylius.svg",
+    textOne: "Sylius",
+    textTwo: "eCommerce Platform",
+  },
+  {
+    logoUrl:
+      "https://videinfra.com/assets/images/media/technologies/symfony.svg",
+    textTwo: "Symfony PHP Framework",
+  },
+  {
+    logoUrl: "https://videinfra.com/assets/images/media/technologies/aws.svg",
+    textTwo: "AWS",
+  },
+];
+// '''''''''''''''''''''' CARD ITEMS '''''''''''''''''''''''''
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< RESULTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+export const DigitalResultItems = [
+  {
+    headTop: "Results",
+    detail: "",
+  },
+];
+export const ECommerceResultItems = [
+  {
+    headTop: "Results",
+    detail: "25.6%",
+    textTop: "Average increase in",
+    textBottom: "conversions after redesign",
+  },
+];
+export const PersonIntroductionDigitalItem = [
+  {
+    name: "Rolands Citajevs",
+    propUrl:
+      "https://videinfra.com/assets/images/media/testimonials/ablv-rolands-citajevs@xs.webp",
+    profession: "CIO, Member of the Board at ABLV Bank",
+    word: "I am pleased to recommend Vide Infra, we have assigned to this company already two projects and they was accomplished perfect — I like their organization of work, their initiative and support, and that they provide assistance after the project is completed. We are satisfied of particular service provided by Vide Infra and we will be glad to continue our cooperation in the future.",
+  },
+];
+// ============================= LOGO URL ====================================
+export const ComapnyLogosItems = [
+  {
+    url: "https://videinfra.com/assets/images/media/clients/ablv-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/ba-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/bite-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/airbaltic-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/dnb-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/ge-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/seb-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/ablv-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/tn-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/ba-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/bite-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/airbaltic-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/dnb-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/ge-dark.svg",
+  },
+  {
+    url: "https://videinfra.com/assets/images/media/clients/seb-dark.svg",
+  },
+];
 // _________________________________________ Expertise ________________________________________________

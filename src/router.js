@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Demo } from "./component/Demo";
+import { Demo } from "./component/test/Demo";
 import { Layout } from "./Layout";
 import {
   BlogPage,
