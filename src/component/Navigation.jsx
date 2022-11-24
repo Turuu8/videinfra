@@ -7,7 +7,8 @@ export const Navigation = () => {
   let href = window.location.href.split("//")[1].split("/")[1];
   const [title, setTitle] = useState("Expertise");
   const handClick = (e) => {
-    console.log(e.target);
+    console.log(e.target.value);
+    setTitle(e.target.value);
   };
   return (
     <div

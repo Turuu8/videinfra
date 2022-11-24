@@ -17,6 +17,7 @@ export * from "./company-page/DirectorPeople";
 export * from "./company-page/ClientTile";
 export * from "./company-page/OurClientContent";
 export * from "./company-page/RecognitionContent";
+export * from "./company-page/ArrowRL";
 // company page export
 
 // work page export
@@ -40,5 +41,10 @@ export * from "./career-page/Vacancies";
 export * from "./contact-page/LocationPhone";
 export * from "./contact-page/WriteEmail";
 // contact page export
+
+// expertise page export
+export * from "./expertise/Accordion";
+export * from "./expertise/CaseStudies";
+// expertise page export
 
 export * from "./Footer";

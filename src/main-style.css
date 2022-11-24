@@ -1059,7 +1059,6 @@
 }
 .company-page .our-clients-section .row-pad-reviews .container {
   display: flex;
-  gap: 5px;
 }
 .company-page .our-clients-section .row-pad-reviews .container div {
   width: 30px;
@@ -1067,19 +1066,6 @@
   border-radius: 50%;
   background-color: #191b1d;
   margin-right: 10px;
-}
-.company-page .our-clients-section .row-pad-reviews .container button {
-  border: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #e8e8e8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.company-page .our-clients-section .row-pad-reviews .container img {
-  width: 70%;
 }
 .company-page .our-clients-section .row-pad-reviews .review-text {
   width: 50%;
@@ -1178,6 +1164,20 @@
   overflow-x: auto;
 }
 
+.arrow-buttons {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-buttons img {
+  width: 70%;
+}
+
 .work-page {
   background-color: #fff;
 }
@@ -1193,17 +1193,18 @@
   column-gap: 40px;
   row-gap: 70px;
 }
-.work-page .work-cards-section .card-container {
+
+.work-page-card-container {
   width: 100%;
 }
-.work-page .work-cards-section .card-container .card-image {
+.work-page-card-container .card-image {
   width: 100%;
   position: relative;
 }
-.work-page .work-cards-section .card-container .card-image img {
+.work-page-card-container .card-image img {
   width: 100%;
 }
-.work-page .work-cards-section .card-container .card-image .plus {
+.work-page-card-container .card-image .plus {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1216,19 +1217,19 @@
   align-items: center;
   justify-content: center;
 }
-.work-page .work-cards-section .card-container .card-image .plus img {
+.work-page-card-container .card-image .plus img {
   width: 12px;
   height: 12px;
 }
-.work-page .work-cards-section .card-container h2 {
+.work-page-card-container h2 {
   padding-top: 1%;
   font-size: 16px;
   letter-spacing: -0.03em;
 }
-.work-page .work-cards-section .card-container h2 p {
+.work-page-card-container h2 p {
   line-height: 140%;
 }
-.work-page .work-cards-section .card-container h2 p:nth-child(2) {
+.work-page-card-container h2 p:nth-child(2) {
   color: rgba(25, 27, 29, 0.5019607843);
 }
 
@@ -1849,6 +1850,161 @@
   width: 70%;
 }
 
+.accordion-expertise {
+  margin-top: 240px;
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 140px 280px;
+}
+.accordion-expertise .container-accordion {
+  border-top: 1px solid rgba(25, 27, 29, 0.1019607843);
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-expertise .container-accordion h3 {
+  padding-top: 80px;
+  letter-spacing: -0.03em;
+  font-size: 16px;
+  line-height: 10%;
+}
+.accordion-expertise .container-accordion .names {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 24px 0 0 20px;
+}
+.accordion-expertise .container-accordion .names .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0 36px;
+  border-top: 1px solid rgba(25, 27, 29, 0.1019607843);
+}
+.accordion-expertise .container-accordion .names .container h4 {
+  font-size: 37px;
+  font-family: "Graphik LCG Medium";
+  letter-spacing: -0.03em;
+  line-height: 80%;
+}
+.accordion-expertise .container-accordion .names .container div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eaebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-expertise-two {
+  background-color: #191b1d;
+  width: 100%;
+  color: #fff;
+}
+.accordion-expertise-two .container-accordion {
+  padding: 0 140px 280px;
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-expertise-two .container-accordion h3 {
+  padding-top: 80px;
+  letter-spacing: -0.03em;
+  font-size: 16px;
+  line-height: 10%;
+}
+.accordion-expertise-two .container-accordion .names {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 24px 0 0 20px;
+}
+.accordion-expertise-two .container-accordion .names .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1490196078);
+}
+.accordion-expertise-two .container-accordion .names .container h4 {
+  font-size: 37px;
+  font-family: "Graphik LCG Medium";
+  letter-spacing: -0.03em;
+  line-height: 80%;
+}
+.accordion-expertise-two .container-accordion .names .container div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3b3d3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-expertise-two .container-accordion .names .container div img {
+  width: 70%;
+}
+
+.case-studies-section {
+  width: 100%;
+  border-top: 1px solid rgba(25, 27, 29, 0.1019607843);
+  background-color: #fff;
+}
+.case-studies-section .container {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.case-studies-section .container .headline {
+  box-sizing: border-box;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 60px 140px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.case-studies-section .container .headline h1 {
+  font-size: 91px;
+  letter-spacing: -0.07em;
+  font-family: "Graphik LCG Medium";
+  line-height: 75%;
+}
+.case-studies-section .container .headline .case-studies-buttons {
+  display: flex;
+}
+.case-studies-section .container .headline .case-studies-buttons a {
+  padding: 0 16px;
+  text-decoration: none;
+  color: #191b1d;
+  background-color: #e8e8e8;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 19px;
+  letter-spacing: -0.03em;
+}
+.case-studies-section .container .cards {
+  display: flex;
+  gap: 40px;
+  padding: 240px 0 320px 140px;
+  overflow-x: auto;
+}
+.case-studies-section .container .work-page-card-container {
+  width: 680px;
+  min-width: 680px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1944,13 +2100,13 @@ body {
   top: 0;
   pointer-events: none;
   z-index: -1;
-  transition: 2s;
+  transition: 0.7s;
 }
 .navigation .header-content .white-full {
   position: absolute;
   top: -100vh;
   left: 0;
-  transition: 1s;
+  transition: 0.7s;
   background-color: #fff;
   height: 560px;
   width: 100%;

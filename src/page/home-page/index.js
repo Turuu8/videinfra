@@ -36,8 +36,8 @@ export const HomePage = () => {
 
   return (
     <div id="home" className="home-page" data-scroll-container>
-      <section className="top-pointer-events-section" data-scroll-section>
-        <div className="intro" data-scroll>
+      <section className="top-pointer-events-section">
+        <div className="intro">
           <Intro />
         </div>
       </section>
@@ -75,23 +75,23 @@ export const HomePage = () => {
           },
         }}
       > */}
-      <section className="video-section" data-scroll-section>
-        <Video data-scroll />
+      <section className="video-section">
+        <Video />
       </section>
       {/* </Tween> */}
       {ExpertiseItems.map((el, i) => (
-        <section key={i} className="expertise-section" data-scroll-section>
-          <Expertise {...el} data-scroll />
+        <section key={i} className="expertise-section">
+          <Expertise {...el} />
         </section>
       ))}
-      <section className="our-apabilities-section" data-scroll-section>
-        <OurApabilities data-scroll />
+      <section className="our-apabilities-section">
+        <OurApabilities />
       </section>
-      <section className="company-section" data-scroll-section>
-        <Company data-scroll />
+      <section className="company-section">
+        <Company />
       </section>
-      <section className="insights-section" data-scroll-section>
-        <Insights data-scroll />
+      <section className="insights-section">
+        <Insights />
       </section>
     </div>
   );

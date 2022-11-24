@@ -1,6 +1,9 @@
 export const Discription = (props) => {
   return (
-    <div className="content-discription">
+    <div
+      style={props.headTop === "" ? { padding: "25px 0 240px" } : {}}
+      className="content-discription"
+    >
       <div>
         <h5>
           <p>{props.headTop}</p>

@@ -91,13 +91,13 @@ body {
             top: 0;
             pointer-events: none;
             z-index: -1;
-            transition: 2s;
+            transition: .7s;
         }
         .white-full{
             position: absolute;
             top: -100vh;
             left: 0;
-            transition: 1s;
+            transition: .7s;
             background-color: $light;
             height: 560px;
             width: 100%;
