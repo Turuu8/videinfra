@@ -144,6 +144,8 @@ export const ContactPageList = [
   },
 ];
 
+// _________________________________________ Expertise ________________________________________________
+
 export const ExpertiseDigitalProductDesignItems = [
   { title: "Digital Products & Services", Size: "90px", pad: "-.065em" },
 ];
@@ -156,3 +158,382 @@ export const ExpertiseCorporateWebsitesItems = [
 export const ExpertiseBrandCommunicationItems = [
   { title: "Brand & Communication Design", Size: "90px", pad: "-.065em" },
 ];
+
+export const ExpertiseDigitalProductsItems = [
+  {
+    headTop: "Overview",
+    detail:
+      "We help startups and established businesses to develop new digital products, and streamline existing customer-facing online services, by researching and developing delightful and valuable user experiences, and engineering highly efficient web-and-mobile-native apps.",
+  },
+];
+export const ExpertiseECommerceDiscriptionItems = [
+  {
+    headTop: "Overview",
+    detail:
+      "A thoroughly developed, research-backed and meticulously tested user experience is among the critical success factors for eСommerce projects in the highly competitive online marketplace. We help eCommerce companies significantly improve their customer acquisition, conversion, retention, and overall customer satisfaction levels.",
+  },
+];
+export const ExpertiseECommerceDiscriptionItemsTwo = [
+  {
+    headTop: "",
+    detail:
+      "We also increase average spending by carefully analysing and systematically improving user experience. We will help you build an excellent eCommerce platform, secure a substantial competitive advantage, and win your customers’ loyalty from research and prototyping through cutting-edge visual design and advanced front-end to efficient back-end development.",
+  },
+];
+export const ExpertiseCorporateWebsitesDiscriptionItems = [
+  {
+    headTop: "Overview",
+    detail:
+      "Inspire your prospects, generate leads, maintain existing customer loyalty, educate and develop your market, boost your organisation's corporate culture, effectively stand out from the competition — a proper corporate website, probably the most versatile and effective marketing communications tool today, will help you achieve significant results in all of these areas. The task of creating an integrated website is a complex one and requires a thorough methodology, broad experience in various related disciplines, and a skilful team — all of which we will readily provide for your project.",
+  },
+];
+export const ExpertiseCorporateWebsitesDiscriptionItemsTwo = [
+  {
+    headTop: "",
+    detail:
+      "We develop highly tailored, original websites explicitly designed to address our clients' unique goals, highlight advantages and establish functional communication with their customers. Starting from the industry and your organisation research, UX design and finishing with the post-delivery solution effectiveness evaluation and corrections, we are focused not merely on developing a great-looking website but on making a sound, measurable and extensible impact on your business.",
+  },
+];
+export const ExpertiseBrandCommunicationDiscriptionItems = [
+  {
+    headTop: "Overview",
+    detail:
+      "A great brand identity serves as a key to your business strategy by communicating your functional message, personality, values, and aspirations. When done well, your prospective clients will intuitively and effortlessly realise how you differ from the competition, what product quality and level of service they can expect from you, just from a brief interaction with your brand. We will help you design a complete brand identity system for your product or company, from an original name, eye-catching and intelligent logo design, to a comprehensive brand book and promo material design. We will make you stand out from the crowd and be easily remembered and recognised.",
+  },
+];
+
+export const ExpertiseDigitalProductsAccordion = [
+  {
+    firstWord: "Areas of expertise",
+    names: [
+      { name: "Financial products & services" },
+      { name: "Marketplaces" },
+      { name: "Telecom" },
+      { name: "Self-care, customer portals" },
+      { name: "Customer loyalty" },
+      { name: "Digital transformation" },
+    ],
+  },
+];
+
+export const ExpertiseDigitalProductsAccordionTwo = [
+  {
+    firstWord: "Services",
+    names: [
+      { name: "Strategy" },
+      { name: "UX design" },
+      { name: "UI design" },
+      { name: "Front-end development" },
+      { name: "Back-end development" },
+    ],
+  },
+];
+
+export const ExpertiseECommerceAccordion = [
+  {
+    firstWord: "Areas of expertise",
+    names: [
+      { name: "B2C eСommerce" },
+      { name: "B2B eСommerce" },
+      { name: "D2C eСommerce" },
+      { name: "Hospitality" },
+      { name: "Services" },
+    ],
+  },
+];
+export const ExpertiseECommerceAccordionTwo = [
+  {
+    firstWord: "Services",
+    names: [
+      { name: "Research-grounded UX design" },
+      { name: "Best-in-class UI design" },
+      { name: "Front-end development" },
+      { name: "Sylius Development" },
+      { name: "Hosting on AWS" },
+      { name: "Security" },
+      { name: "Support" },
+    ],
+  },
+];
+
+export const ExpertiseCorporateAccordionTwo = [
+  {
+    firstWord: "Services",
+    names: [
+      { name: "Communication strategy" },
+      { name: "UX design" },
+      { name: "Visual design" },
+      { name: "Copywriting" },
+      { name: "Photo and video" },
+      { name: "Front-end development" },
+      { name: "CMS" },
+      { name: "Back-end development" },
+    ],
+  },
+];
+
+export const ExpertiseBrandCommunicationAccordion = [
+  {
+    firstWord: "Areas of expertise",
+    names: [
+      { name: "Full-cycle solutions" },
+      { name: "Corporate communications" },
+      { name: "Real estate" },
+    ],
+  },
+];
+
+export const ExpertiseBrandCommunicationAccordionTwo = [
+  {
+    firstWord: "Services",
+    names: [
+      { name: "Communication strategy" },
+      { name: "Brand modelling" },
+      { name: "Visual idenity" },
+      { name: "Copywriting" },
+      { name: "Promo websites" },
+      { name: "Photo and video" },
+      { name: "Print design" },
+      { name: "3D and visualisation" },
+    ],
+  },
+];
+// ------------------ CASE STUDIES ----------------------
+export const DigitalCaseStudiesItems = [
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/follow-art/preview-list@xxl.webp",
+    workHeadText: "Follow Art",
+    workBottonText: "Marketplace",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/tasky/preview-list@xxxl.webp",
+    workHeadText: "Tasky",
+    workBottonText: "Marketplace",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/british-airways/preview-list@xxxl.webp",
+    workHeadText: "British Airways",
+    workBottonText: "Self-Service, Customer Portal",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/amaffi-corporate-portal/preview-list@xxxl.webp",
+    workHeadText: "Amaffi Corporate Portal",
+    workBottonText: "Corporate Portal",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/accent-cabinet/preview-list@xxxl.webp",
+    workHeadText: "Accent Asset Management Investor Portal",
+    workBottonText: "Investment Management",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/turnkey/preview-list@xxxl.webp",
+    workHeadText: "TurnKey Lender",
+    workBottonText: "Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/aqrm/preview-list@xxxl.webp",
+    workHeadText: "AQRM",
+    workBottonText: "Investment Management",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/dnb/preview-list@xxxl.webp",
+    workHeadText: "DNB",
+    workBottonText: "Corporate Portal",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/lmt/preview-list@xxxl.webp",
+    workHeadText: "LMT",
+    workBottonText: "Self-Service, Customer Portal",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/ablv/preview-list@xxxl.webp",
+    workHeadText: "ABLV",
+    workBottonText: "Corporate Portal, Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/ge-money-bank/preview-list@xxxl.webp",
+    workHeadText: "GE Money Bank",
+    workBottonText: "Self-Service, Customer Portal",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/hi-task/preview-list@xxxl.webp",
+    workHeadText: "HiTask",
+    workBottonText: "SaaS",
+  },
+];
+export const CorporateWebsitesCaseStudiesItems = [
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/fci/preview-list@xxxl.webp",
+    workHeadText: "Food Compliance",
+    workBottonText: "Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/ava-group/preview-list@xxxl.webp",
+    workHeadText: "AVA Group",
+    workBottonText: "Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/naftagaz/preview-list@xxxl.webp",
+    workHeadText: "Naftagaz",
+    workBottonText: "Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/alcon/preview-list@xxxl.webp",
+    workHeadText: "Alcon Group",
+    workBottonText: "Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/accent/preview-list@xxxl.webp",
+    workHeadText: "Accent Capital",
+    workBottonText: "Corporate Website, Branding",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/pioneer/preview-list@xxxl.webp",
+    workHeadText: "Pioneer Service",
+    workBottonText: "Self-Service, Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/turnkey/preview-list@xxxl.webp",
+    workHeadText: "TurnKey Lender",
+    workBottonText: "Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/yes/preview-list@xxxl.webp",
+    workHeadText: "YE’S Apart-hotel",
+    workBottonText: "Self-Service, Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/3s-group/preview-list@xxxl.webp",
+    workHeadText: "3S Group",
+    workBottonText: "Corporate Website",
+  },
+];
+export const BrandDesignCaseStudiesItems = [
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/p9/preview-list@xxxl.webp",
+    workHeadText: "Poklonnaya 9",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/3d-works/preview-list@xxxl.webp",
+    workHeadText: "3D & Visualisation Works",
+    workBottonText: "3D & Visualisation",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/eniteo/preview-list@xxxl.webp",
+    workHeadText: "Eniteo",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/ever/preview-list@xxxl.webp",
+    workHeadText: "Ever",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/vpr/preview-list@xxxl.webp",
+    workHeadText: "Victory Park Residences",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/print-design-works/preview-list@xxxl.webp",
+    workHeadText: "Print Design Works",
+    workBottonText: "Print design",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/loftec/preview-list@xxxl.webp",
+    workHeadText: "Loftec",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/k24/preview-list@xxxl.webp",
+    workHeadText: "Composition No.24",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/fairy-forest/preview-list@xxxl.webp",
+    workHeadText: "Fairy Forest",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/astris/preview-list@xxxl.webp",
+    workHeadText: "Astris",
+    workBottonText: "Promo Website, Branding, 3D",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/neva-towers/preview-list@xxxl.webp",
+    workHeadText: "Neva Towers",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/jayasom/preview-list@xxxl.webp",
+    workHeadText: "Jayasom",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/khlebny/preview-list@xxxl.webp",
+    workHeadText: "House at Khlebny",
+    workBottonText: "Promo Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/level/preview-list@xxxl.webp",
+    workHeadText: "Level",
+    workBottonText: "Promo Website",
+  },
+];
+export const ECommerceCaseStudiesItems = [
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/amaffi/preview-list@xxxl.webp",
+    workHeadText: "Amaffi",
+    workBottonText: "Online Store",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/bite/preview-list@xxxl.webp",
+    workHeadText: "Bite",
+    workBottonText: "Self-Service, Online Store, Corporate Website",
+  },
+  {
+    workImg:
+      "https://videinfra.com/assets/images/media/works/rd-electronics/preview-list@xxxl.webp",
+    workHeadText: "RD Electronics",
+    workBottonText: "Online Store",
+  },
+];
+// ------------------ CASE STUDIES ----------------------
+// _________________________________________ Expertise ________________________________________________

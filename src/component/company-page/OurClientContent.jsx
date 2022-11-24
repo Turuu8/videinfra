@@ -5,7 +5,7 @@ import {
 } from "../../datas/company-page";
 import { Discription } from "../career-page/Discription";
 import { ClientTile } from "./ClientTile";
-import arrow from "../../images/arrow.line.svg";
+import { ArrowRL } from "./ArrowRL";
 
 export const OurClientContent = () => {
   return (
@@ -23,20 +23,7 @@ export const OurClientContent = () => {
       <div className="row-pad-reviews">
         <div className="container">
           <div></div>
-          <button
-            style={{
-              transform: "rotate(90deg)",
-            }}
-          >
-            <img src={arrow} alt="" />
-          </button>
-          <button
-            style={{
-              transform: "rotate(-90deg)",
-            }}
-          >
-            <img src={arrow} alt="" />
-          </button>
+          <ArrowRL />
         </div>
         <div className="review-text">
           <p>
