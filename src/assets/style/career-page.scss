@@ -1,0 +1,298 @@
+.career-page {
+  width: 100%;
+  @include headline;
+  .vacancies-section {
+    width: 100%;
+    background-color: $light;
+    margin-top: 360px;
+    .content-vacancies {
+      @include maxWidth;
+      .work-vacancies {
+        padding: 0 140px 320px;
+        display: flex;
+        justify-content: space-between;
+        h5 {
+          font-size: 16px;
+          padding: 80px 0 12px;
+          p:nth-child(2) {
+            color: $bsSmi;
+          }
+        }
+        span {
+          padding-top: 63px;
+          font-size: 38.2px;
+          font-family: "Graphik LCG Medium";
+          letter-spacing: -0.05em;
+          width: 48.5%;
+          display: flex;
+          justify-content: space-between;
+          div {
+            margin-top: 1%;
+            background-color: $lm;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(90deg);
+            img {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ==================================== DISCRIPTION SECTION =====================================
+.discription-section {
+  width: 100%;
+  .content-discription {
+    @include maxWidth;
+    padding: 0 140px 0;
+    .top-border {
+      padding-top: 72px;
+      border-top: 1px solid $bc;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        font-size: 16px;
+        transition: 0.6s;
+        letter-spacing: -0.03em;
+        transition-delay: 0.25s;
+
+        p:nth-child(2) {
+          color: $light;
+        }
+      }
+      h6 {
+        transition: 0.8s;
+        color: $oc;
+        transition-delay: 0.25s;
+        line-height: 115%;
+        margin-top: -0.3%;
+        box-sizing: border-box;
+        font-size: 22px;
+        padding-left: 20px;
+        width: 50%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+  .company-discription {
+    @include maxWidth;
+    padding: 0 140px 0;
+    .top-border {
+      padding-top: 72px;
+      border-top: 1px solid $bc;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        font-size: 16px;
+        transition: 0.6s;
+        letter-spacing: -0.03em;
+        transition-delay: 0.25s;
+
+        p:nth-child(2) {
+          color: $light;
+        }
+      }
+      h6 {
+        transition: 0.8s;
+        color: $oc;
+        transition-delay: 0.25s;
+        line-height: 105%;
+        margin-top: -0.3%;
+        box-sizing: border-box;
+        font-size: 38px;
+        padding-left: 20px;
+        width: 50%;
+        font-family: "Graphik LCG Medium";
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+  .second-discription {
+    @include maxWidth;
+    padding: 0 140px 0;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+    .top-border {
+      padding-top: 72px;
+      border-top: 1px solid $bc;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        font-size: 16px;
+        letter-spacing: -0.03em;
+        p {
+          transition: 0.8s;
+        }
+        p:nth-child(2) {
+          color: $light;
+        }
+      }
+      h6 {
+        transition: 0.8s;
+        color: $oc;
+        line-height: 115%;
+        margin-top: -0.3%;
+        box-sizing: border-box;
+        font-size: 22px;
+        padding-left: 20px;
+        width: 50%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+  .two-line-discription {
+    @include maxWidth;
+    padding: 27px 140px 0;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+    div {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        font-size: 16px;
+        letter-spacing: -0.03em;
+        p {
+          transition: 0.8s;
+        }
+        p:nth-child(2) {
+          color: $light;
+        }
+      }
+      h6 {
+        transition: 0.8s;
+        color: $oc;
+        line-height: 115%;
+        margin-top: -0.3%;
+        box-sizing: border-box;
+        font-size: 22px;
+        padding-left: 20px;
+        width: 50%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+  .two-line-container-discription {
+    @include maxWidth;
+    padding: 0 140px 0;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+    .top-border {
+      padding-top: 72px;
+      border-top: 1px solid $bc;
+      transition: 0.5s;
+      div {
+        display: flex;
+        justify-content: space-between;
+        h5 {
+          font-size: 16px;
+          letter-spacing: -0.03em;
+          p {
+            transition: 0.8s;
+          }
+          p:nth-child(2) {
+            color: $light;
+          }
+        }
+        h6 {
+          transition: 0.8s;
+          color: $oc;
+          line-height: 115%;
+          margin-top: -0.3%;
+          box-sizing: border-box;
+          font-size: 22px;
+          padding-left: 20px;
+          width: 50%;
+          letter-spacing: -0.04em;
+        }
+      }
+    }
+  }
+  .discription {
+    @include maxWidth;
+    padding: 72px 140px 240px;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+    div {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        font-size: 16px;
+        letter-spacing: -0.03em;
+      }
+      h6 {
+        color: $light;
+        font-family: "Graphik LCG Medium";
+        margin-top: -5px;
+        box-sizing: border-box;
+        font-size: 180px;
+        padding: 0 20px;
+        width: 50%;
+        letter-spacing: -0.06em;
+        line-height: 90%;
+      }
+      .addition-text {
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        line-height: 100%;
+      }
+    }
+  }
+  .result-discription {
+    @include maxWidth;
+    padding: 0 140px 0;
+    .top-border {
+      padding-top: 72px;
+      border-top: 1px solid $bc;
+      div:nth-child(1) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h5 {
+          font-size: 16px;
+          letter-spacing: -0.03em;
+        }
+        h6 {
+          color: $light;
+          line-height: 80%;
+          box-sizing: border-box;
+          font-size: 180px;
+          font-family: "Graphik LCG Medium";
+          padding-left: 20px;
+          width: 48%;
+          letter-spacing: -0.04em;
+        }
+      }
+      .result-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 16px;
+        line-height: 120%;
+        padding: 72px 0 240px 20px;
+        grid-area: 2 / 2 /3 /3;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+  div:nth-child(2) {
+    padding-top: 25px;
+    .top-border {
+      padding-top: 0;
+      border: none;
+    }
+  }
+}

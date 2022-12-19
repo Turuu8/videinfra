@@ -1,43 +1,63 @@
+import { InView } from "react-intersection-observer";
+
 export const Discription = (props) => {
   return (
-    <div
-      style={props.detail === "" ? { padding: "80px 140px 80px" } : {}}
-      className="content-discription"
-    >
-      <div>
-        <h5>
-          <p>{props.headTop}</p>
-          <p>{props.headBotton}</p>
-        </h5>
-        <span
+    <InView threshold="0" triggerOnce>
+      {({ inView, ref }) => (
+        <div
+          className={props.page}
           style={
-            props.size === "38px"
-              ? {
-                  fontSize: "38px",
-                  fontFamily: "Graphik LCG Medium",
-                  lineHeight: "105%",
-                  padding: "5px 0 0 20px ",
+            props.page === "content-discription"
+              ? {}
+              : {
+                  transform: inView ? "translateY(0)" : "translateY(200px)",
+                  opacity: inView ? "1" : "0",
                 }
-              : props.headBotton === "Recognition"
-              ? {
-                  color: "#fff",
-                  letterSpacing: "-0.04em",
-                  padding: "0 0 240px 20px",
-                }
-              : {}
           }
         >
-          {props.detail}
-          {/* {props.detail === "" ? (
-            props.detail
-          ) : (
-            <div className="addition-text">
-              <p>{props.textTop}</p>
-              <p>{props.textBottom}</p>
+          <div className="top-border">
+            <div>
+              <h5
+                style={
+                  props.page === "content-discription"
+                    ? {
+                        transform: inView ? "translateY(0)" : "translateY(150px)",
+                        opacity: inView ? "1" : "0",
+                        lineHeight: inView ? "115%" : "250%",
+                      }
+                    : {}
+                }
+              >
+                <p ref={ref}>{props.headTop}</p>
+                <p ref={ref}>{props.headBotton}</p>
+              </h5>
+              <h6
+                ref={ref}
+                style={
+                  props.page === "content-discription"
+                    ? {
+                        transform: inView ? "translateY(0)" : "translateY(70%)",
+                        opacity: inView ? "1" : "0",
+                        lineHeight: inView ? "115%" : "250%",
+                      }
+                    : {}
+                }
+              >
+                {props.detail}
+              </h6>
+              {props.textTop ? (
+                <div className="result-text">
+                  <span>{props.textTop}</span>
+                  <span>{props.textBottom}</span>
+                </div>
+              ) : (
+                <></>
+              )}
+              {props.numberStatus ? <h1 style={{ color: "#fff" }}>hello</h1> : <></>}
             </div>
-          )} */}
-        </span>
-      </div>
-    </div>
+          </div>
+        </div>
+      )}
+    </InView>
   );
 };

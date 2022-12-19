@@ -1,13 +1,16 @@
+import { TextButtom } from "../ui/Buttom";
+import { WorkPageCards } from "../ui/WorkCards";
+
 export const Expertise = (props) => {
   return (
     <div className="container-expertise">
       <div className="top-row">
         <div className="learn-more">
           <div className="items">
-            <div>
-              <p>{props.num}</p>
+            <div className="num">
+              <p>{props.number.num}</p>
             </div>
-            <span>Learn More</span>
+            <TextButtom text="Learn More" path={`/expertise/${props.type}`} />
           </div>
         </div>
         <div className="headline">
@@ -16,16 +19,9 @@ export const Expertise = (props) => {
         </div>
       </div>
       <div className="bottom-works">
-        <div className="art">
-          <img width="100%" src={props.workOneUrl} alt="" />
-          <p className="space">{props.workOneTextHead}</p>
-          <p className="type-art">{props.workOneText}</p>
-        </div>
-        <div>
-          <img width="100%" src={props.workTwoUrl} alt="" />
-          <p className="space">{props.workTwoTextHead}</p>
-          <p className="type-art">{props.workTwoText}</p>
-        </div>
+        {props.name?.slice(0, 2).map((el, ind) => (
+          <WorkPageCards key={ind} {...el} />
+        ))}
       </div>
     </div>
   );

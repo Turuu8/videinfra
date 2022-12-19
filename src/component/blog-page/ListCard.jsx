@@ -4,14 +4,18 @@ export const ListCard = (props) => {
   return (
     <div>
       <div className="special-card">
-        <img src={props.specialUrl} alt="" />
-        <span>
-          <h1>{props.specialHeadline}</h1>
-          <div>
-            <p>{props.specialMin}</p>
-            <p>{props.specialType}</p>
+        <div className="hover-container">
+          <div className="img-container">
+            <img src={props.specialUrl} alt="" />
           </div>
-        </span>
+          <span>
+            <h1>{props.specialHeadline}</h1>
+            <div>
+              <p>{props.specialMin}</p>
+              <p>{props.specialType}</p>
+            </div>
+          </span>
+        </div>
       </div>
       <div className="insights-list">
         {props.allCardList?.map((el, i) => (

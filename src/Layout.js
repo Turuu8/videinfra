@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import { Footer, Navigation } from "./component";
 
 export const Layout = () => {
@@ -8,10 +9,17 @@ export const Layout = () => {
   return (
     <>
       <Navigation />
-      <main>
-        <Outlet />
-      </main>
+      <ScrollToTop />
+      <Outlet />
       <Footer />
     </>
   );
+};
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
 };

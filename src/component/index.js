@@ -1,6 +1,6 @@
-export * from "./Navigation";
+export * from "./ui/Navigation";
 
-export * from "./JumpHomePageText";
+export * from "./ui/JumpHomePageText";
 // home page export
 export * from "./home-pgae/Intro";
 export * from "./home-pgae/Video";
@@ -22,13 +22,15 @@ export * from "./company-page/Personintroduction";
 // company page export
 
 // work page export
-export * from "./work-page/WorkPageCards";
+export * from "./ui/WorkCards";
+export * from "./ui/WorkCardDetail";
 // work page export
 
 // blog page export
 export * from "./blog-page/HeadlineChooseBtn";
 export * from "./blog-page/ListCard";
 export * from "./blog-page/LeaveEmail";
+export * from "./blog-page/BlogDetail";
 // blog page export
 
 // career page export
@@ -50,4 +52,4 @@ export * from "./expertise/Results";
 export * from "./expertise/TechnologiesCards";
 // expertise page export
 
-export * from "./Footer";
+export * from "./ui/Footer";

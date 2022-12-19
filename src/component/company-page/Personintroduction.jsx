@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRL } from "./ArrowRL";
-import quotesB from "../../images/double-quotes-B.svg";
-import quotesW from "../../images/double.quotes-W.svg";
+import quotesB from "../../assets/images/double-quotes-B.svg";
+import quotesW from "../../assets/images/double.quotes-W.svg";
 
 export const Personintroduction = (props) => {
   return (

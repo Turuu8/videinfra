@@ -1,4 +1,4 @@
-import donwLine from "../../images/icon-upward.svg";
+import donwLine from "../../assets/images/icon-upward.svg";
 
 export const Vacancies = () => {
   return (
