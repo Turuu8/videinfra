@@ -1,4 +1,4 @@
-import { ExpertiseCardItems } from "../../datas";
+import { ExpertiseCardItems } from "../../utils";
 import { ArrowRL } from "../company-page/ArrowRL";
 import { CompanyCards } from "../home-pgae/CompanyCards";
 

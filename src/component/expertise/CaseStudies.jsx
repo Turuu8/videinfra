@@ -1,5 +1,6 @@
 import { ArrowRL } from "../company-page/ArrowRL";
-import { WorkPageCards } from "../work-page/WorkPageCards";
+import { TextButtom } from "../ui/Buttom";
+import { WorkPageCards } from "../ui/WorkCards";
 
 export const CaseStudies = (props) => {
   return (
@@ -8,7 +9,8 @@ export const CaseStudies = (props) => {
         <div className="headline">
           <h1>Case Studies</h1>
           <div className="case-studies-buttons">
-            <a href="/work">All Works</a>
+            <TextButtom text="All Works" path="/" />
+            {/* <a href="/work">All Works</a> */}
             <ArrowRL />
           </div>
         </div>

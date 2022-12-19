@@ -46,8 +46,8 @@ export const Intro = () => {
                 className="leading-text"
               >
                 <span>
-                  We design and develop exceptional digital products & services,
-                  eCommerce, and brand communication solutions.
+                  We design and develop exceptional digital products & services, eCommerce, and
+                  brand communication solutions.
                 </span>
               </div>
               <div

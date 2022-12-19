@@ -1,13 +1,10 @@
 import React from "react";
-import {
-  CompanyPageRecognitionItems,
-  RecognitionCardItems,
-} from "../../datas/company-page";
+import { CompanyPageRecognitionItems, RecognitionCardItems } from "../../utils/company-page";
 import { Discription } from "../career-page/Discription";
-import refresh from "../../images/refresh.icon.svg";
+import { JumpHomePageText } from "../ui/JumpHomePageText";
+import refresh from "../../assets/images/refresh.icon.svg";
+import arrow from "../../assets/images/downLine-white.svg";
 import { CompanyCards } from "../home-pgae/CompanyCards";
-import { JumpHomePageText } from "../JumpHomePageText";
-import arrow from "../../images/downLine-white.svg";
 
 export const RecognitionContent = () => {
   return (

@@ -1,0 +1,127 @@
+.blog-page {
+  width: 100%;
+  background-color: $light;
+  .list-cards {
+    @include maxWidth;
+    padding: 80px 140px 320px;
+    .special-card {
+      width: 100%;
+      padding-bottom: 80px;
+      .hover-container {
+        width: 100%;
+        display: flex;
+        transition: 0.5s;
+        border: 1px solid $lm;
+        height: 578px;
+      }
+      img {
+        width: 920px;
+        height: 100%;
+      }
+      span {
+        max-width: 478px;
+        box-sizing: border-box;
+        padding: 50px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 14px;
+        h1 {
+          line-height: 100%;
+          font-size: 38px;
+          letter-spacing: -0.04em;
+          font-family: "Graphik LCG Medium";
+        }
+        p:nth-child(1) {
+          color: $bsSmi;
+        }
+        p:nth-child(2) {
+          color: $oc;
+        }
+      }
+    }
+    .hover-container:hover {
+      cursor: pointer;
+      border: 0.1px solid $oc;
+    }
+  }
+  .leave-email-section {
+    width: 100%;
+    background-color: $oc;
+    height: 640px;
+    letter-spacing: -0.03em;
+    .content {
+      @include maxWidth;
+      display: flex;
+      padding: 72px 140px 80px;
+      justify-content: space-between;
+      color: $light;
+      h3 {
+        font-size: 16px;
+      }
+      .leave-email {
+        width: 49%;
+        font-size: 14px;
+        color: #ffffff66;
+        box-sizing: border-box;
+        padding: 0 0 0 0.5%;
+        span {
+          color: $light;
+        }
+        .input {
+          position: relative;
+          margin-bottom: 12%;
+          input {
+            background-color: $oc;
+            border: none;
+            border-bottom: 3px solid #363839;
+            padding-bottom: 20px;
+            height: 44px;
+            outline: none;
+            font-size: 2.8em;
+            width: 100%;
+            letter-spacing: -0.06em;
+            color: $light;
+          }
+          span {
+            letter-spacing: -0.05em;
+            font-size: 38px;
+            font-family: "Graphik LCG Medium";
+            left: 0;
+            bottom: 20px;
+            padding-top: 10px;
+            position: absolute;
+            pointer-events: none;
+            transition: 0.5s;
+            .optional {
+              position: absolute;
+              left: 105%;
+              top: 0;
+              color: $bsSmi;
+            }
+          }
+          input:valid ~ span,
+          input:focus ~ span {
+            color: $bsSmi;
+            opacity: 0;
+          }
+          button {
+            border: none;
+            font-size: 16px;
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            color: $oc;
+            background-color: $light;
+            height: 30px;
+            display: flex;
+            padding: 0 16px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

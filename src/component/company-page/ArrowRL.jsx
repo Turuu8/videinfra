@@ -1,5 +1,5 @@
-import arrow from "../../images/arrow.line.svg";
-import arrowW from "../../images/downLine-white.svg";
+import arrow from "../../assets/images/arrow.line.svg";
+import arrowW from "../../assets/images/downLine-white.svg";
 
 export const ArrowRL = ({ props }) => {
   return (
@@ -11,11 +11,7 @@ export const ArrowRL = ({ props }) => {
           marginRight: "2.5px",
         }}
       >
-        {props === "black" ? (
-          <img src={arrowW} alt="" />
-        ) : (
-          <img src={arrow} alt="" />
-        )}
+        {props === "black" ? <img src={arrowW} alt="" /> : <img src={arrow} alt="" />}
       </button>
       <button
         className={props === "black" ? "arrow-buttonsTwo" : "arrow-buttons"}
@@ -24,11 +20,7 @@ export const ArrowRL = ({ props }) => {
           marginLeft: "2.5px",
         }}
       >
-        {props === "black" ? (
-          <img src={arrowW} alt="" />
-        ) : (
-          <img src={arrow} alt="" />
-        )}
+        {props === "black" ? <img src={arrowW} alt="" /> : <img src={arrow} alt="" />}
       </button>
     </>
   );

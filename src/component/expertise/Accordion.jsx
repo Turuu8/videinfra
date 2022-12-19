@@ -1,5 +1,5 @@
-import arrowDownB from "../../images/arrow.line.svg";
-import arrowDownW from "../../images/downLine-white.svg";
+import arrowDownB from "../../assets/images/arrow.line.svg";
+import arrowDownW from "../../assets/images/downLine-white.svg";
 
 export const Accordion = (props) => {
   return (

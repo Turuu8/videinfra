@@ -1,4 +1,5 @@
-import { InsightsLists } from "../../datas";
+import { InsightsLists } from "../../utils";
+import { TextButtom } from "../ui/Buttom";
 import { Card } from "./Card";
 
 export const Insights = () => {
@@ -6,7 +7,7 @@ export const Insights = () => {
     <div className="insights-content">
       <div className="head-row">
         <h1>Insights</h1>
-        <p>Read Our Blog</p>
+        <TextButtom text="Read Our Blog" path="/blog" />
       </div>
       <div className="insights-list">
         {InsightsLists.map((el, i) => (
