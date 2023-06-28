@@ -9,13 +9,29 @@
   overflow: hidden;
   position: relative;
 }
+.grain {
+
+position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-image: url(https://uploads-ssl.webflow.com/63d2d31…/63dd6ec…_grain.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    opacity: .25;
+    }
+
+    
 .home-page .top-pointer-events-section {
-  background-color: #cdcecf;
+  background-color: #0a0a0e;
   position: relative;
   width: 100%;
-  height: 73.5vh;
+  height: 95vh;
   z-index: 1;
-}
+  border: 1px solid hsla(0,0%,100%,.12);
+  }
 .home-page .top-pointer-events-section .intro {
   box-sizing: border-box;
   max-width: 1680px;
@@ -32,6 +48,9 @@
   justify-content: space-between;
   overflow: hidden;
   transition: all 0.19s;
+    background-color: hsla(0,0%,100%,.01);
+    background-image: radial-gradient(circle farthest-side at 50% 0,hsla(0,0%,100%,.12),hsla(0,0%,100%,0));
+
 }
 @media (max-width: 567px) {
   .home-page .top-pointer-events-section .intro {

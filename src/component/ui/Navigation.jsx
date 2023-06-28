@@ -34,7 +34,7 @@ export const Navigation = () => {
         <div className="header-content">
           <div className="logo">
             <a href="/">
-              <span>Vide Infra</span>
+              <span>Mandhari</span>
             </a>
           </div>
           <div className="link-btn">

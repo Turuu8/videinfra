@@ -6,6 +6,8 @@ export const Intro = () => {
       <InView threshold="0" triggerOnce>
         {({ inView, ref }) => (
           <>
+            
+ <div class="grain"> </div>
             <div ref={ref} className="headline-word">
               <div>
                 <h1
